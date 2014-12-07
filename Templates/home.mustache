@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+  <title>WCP18 Dancing Fountain</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../Javascript/home.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header" class="pantone">
+		Center of Excellence - Dancing Fountain Prototype
+	</div>
+
+	<div id="content_welcome">
+		<div id="sequence_select">
+
+			<div class="pantone" id="sequence_select_text">Select a sequence from below or create your own!
+			</div>
+
+			<div id="sequence_box">
+				{{#sequence_option}}
+					<div id="{{sequence_id}}" class="sequence">{{sequence_name}}</div>
+				{{/sequence_option}}
+
+			</div>
+
+			<div id="sequence_buttons"></div>
+
+
+		</div>
+
+		<div id="queue">Queue</div>
+
+
+	</div>
+
+
+	<div id="footer">
+		Footer goes here
+	</div>
+
+</body>
+
+</html>
