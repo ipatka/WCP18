@@ -1,0 +1,42 @@
+
+#content_sequence{
+	background-color: rgb(216,216,216);
+
+	text-align: center;
+	margin: auto;
+	border-radius: 4px;
+
+
+	padding-top: 10px;
+
+	width: 700px;
+	height: 450px;
+	max-height: 450px;
+	overflow-y: auto;
+
+}
+
+
+
+#sequence_input{
+	width: 100%;
+}
+
+.valve_button{
+	cursor: pointer;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	margin: 20px auto;
+	border: #979797 solid 1px;
+	background-color: rgba(155,155,155,.5);
+	border-radius: 6px;
+}
+
+.valve_selected{
+	background-color: rgba(74,144,226,.5)!important;
+}
+
+.row_label{
+
+}

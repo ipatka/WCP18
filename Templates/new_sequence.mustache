@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+  <title>WCP18 Dancing Fountain</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/new_sequence.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../Javascript/new_sequence.js"></script>
+
+
+</head>
+
+<body>
+
+	<div id="header" class="pantone">
+		Center of Excellence - Dancing Fountain Prototype
+	</div>
+
+		<div id="content_sequence">
+
+			<table id="sequence_input">
+				<tr>
+					<th class="row_label"></th>
+
+					{{#nozzle_header}}
+    				<th>{{nozzle_name}}</th>
+    				{{/nozzle_header}}
+
+  				</tr>
+
+
+  				{{#nozzle_rows}}
+
+  					
+
+    				<tr>
+    					<td class="row_label">{{row_id}}</td>
+    					{{#valve_columns}}
+
+
+    					<td>
+    						<div id="{{row_id}}_{{valve_id}}"class="valve_button">
+    						</div>
+    					</td>
+    					{{/valve_columns}}
+
+
+
+    				</tr>
+				{{/nozzle_rows}}
+
+			</table>
+		
+
+
+		</div>
+
+		<div id="input_buttons">buttons</div>
+
+
+	<a href="/Home">Back</a>
+
+
+	<div id="footer">
+		Footer goes here
+	</div>
+
+</body>
+
+</html>

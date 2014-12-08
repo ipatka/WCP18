@@ -1,0 +1,65 @@
+#content_welcome{
+
+	background-color: rgb(216,216,216);
+
+	text-align: center;
+	margin: auto;
+	border-radius: 4px;
+
+
+	width: 700px;
+	height: 450px;
+
+
+}
+
+#sequence_select{
+width: 50%;
+
+text-align: center;
+float: left;
+
+}
+
+.sequence{
+	margin: 2px 0px;
+	padding: 2px;
+	cursor: pointer;
+
+}
+
+.sequence:hover{
+	background-color: rgba(228, 241, 254, .95);
+	color: #9B9B9B;
+}
+
+.selected{
+	background-color: rgba(25,181,254,0.5)!important;
+	color: #9B9B9B;
+}
+
+#sequence_select_text{
+	text-align: center;
+}
+
+#sequence_box{
+
+	border: #979797 solid 1px;
+
+	width: 250px;
+	height: 120px;
+	margin: 5px auto;
+	margin-bottom: 10px;
+	background-color: white;
+	max-height: 200px;
+	overflow-y: auto;
+	text-align: left;
+	padding: 5px;
+}
+
+#queue{
+	float: left;
+	width: 50%;
+	text-align: center;
+
+}
