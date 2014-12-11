@@ -1,12 +1,33 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
 body{
-	background-color: rgba(0,106,77,.75); 
+	background-color: #10222B; 
+	font-family: Futura, sans-serif;
+	font-weight: 100;
 
 }
 
-.pantone{
-	color: rgb(0,106,77);
+.header_text{
+	color: white;
+}
+
+.sub_header{
+	color: white;
+
+}
+
+.body{
+	color: #10222B;
+}
+
+
+
+.hackbu_background{
+	color: rgb(98,193,124);
+}
+
+.hackbu_text{
+	color: rgb(0,103,62);
 }
 
 #header{
@@ -22,6 +43,43 @@ body{
 
 
 #footer{
+padding: 30px 30px;
 
+}
+
+.button{
+	display: inline-block;
+	border: #979797 solid 1px;
+	background-color: rgb(216,216,216);
+	cursor: pointer;
+	border-radius: 3px;
+
+
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+.button:hover{
+	background-color: rgb(149,171,99);
+	color: white;
+}
+
+#school_logo{
+width: 25%;
+text-align: center;
+float: left;
+}
+
+#bu_logo{
+	width: 100px;
+	height: auto;
+}
+
+
+
+#team_info{
+	width: 30%;
+	float: right;
+	text-align: center;
 
 }

@@ -7,5 +7,10 @@ $(document).ready(function(){
 
 	});
 
+	$("#add_more_rows").click(function() {
+		console.log("add_more_rows");
+
+	});
+
 
 });//done ready

@@ -14,18 +14,18 @@
 
 <body>
 
-	<div id="header" class="pantone">
-		Center of Excellence - Dancing Fountain Prototype
+	<div id="header" class="header_text">
+		Dancing Fountain Prototype
 	</div>
 
 		<div id="content_sequence">
 
 			<table id="sequence_input">
 				<tr>
-					<th class="row_label"></th>
+					<th></th>
 
 					{{#nozzle_header}}
-    				<th>{{nozzle_name}}</th>
+    				<th class="column_label body">{{nozzle_name}}</th>
     				{{/nozzle_header}}
 
   				</tr>
@@ -36,7 +36,7 @@
   					
 
     				<tr>
-    					<td class="row_label">{{row_id}}</td>
+    					<td class="row_label body">{{row_name}}</td>
     					{{#valve_columns}}
 
 
@@ -57,14 +57,26 @@
 
 		</div>
 
-		<div id="input_buttons">buttons</div>
+		<div id="input_buttons">
+			<a class="button body" href="/Home">Back</a>
+
+			<div class="button body" id="add_more_rows">Add More Rows</div>
+		</div>
 
 
-	<a href="/Home">Back</a>
 
 
 	<div id="footer">
-		Footer goes here
+		<div id="school_logo">
+			<img id="BU_logo" class="image" src="../Images/last_hackbu.png"/>
+		</div>
+
+		<div id="team_info" class="sub_header">
+			WCP18<br>Isaac Patka<br>
+			Priscilla Li<br>Vivian Mo<br>
+			Mehdi Lamkies
+		</div>
+
 	</div>
 
 </body>

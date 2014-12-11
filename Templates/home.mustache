@@ -9,18 +9,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="../Javascript/home.js"></script>
 
+  <script type="text/javascript" src="../external_libraries/sweetalert-master/lib/sweet-alert.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="../external_libraries/sweetalert-master/lib/sweet-alert.css">
+
 </head>
 
 <body>
 
-	<div id="header" class="pantone">
-		Center of Excellence - Dancing Fountain Prototype
+	<div id="header" class="header_text">
+		Dancing Fountain Prototype
 	</div>
 
 	<div id="content_welcome">
 		<div id="sequence_select">
 
-			<div class="pantone" id="sequence_select_text">Select a sequence from below or create your own!
+			<div class="sub_header" id="sequence_select_text">Select a sequence from below or create your own!
 			</div>
 
 			<div id="sequence_box">
@@ -31,7 +35,10 @@
 			</div>
 
 			<div id="sequence_buttons">
-				<a href="/New_Sequence">New Sequence</a>
+				<a class ="button body" href="/New_Sequence">New Sequence</a>
+
+				<div class ="button body" id="add_to_queue">Add to queue</div>
+
 
 
 			</div>
@@ -39,14 +46,37 @@
 
 		</div>
 
-		<div id="queue">Queue</div>
+		<div id="queue">
+
+			<div class="sub_header" id="queue_text">
+				Queue
+			</div>
+
+			<div id="queue_box">
+				<div class="queue_inner_text body">Sequence
+				</div>
+				<div class="queue_inner_text body">Time remaining
+				</div>
+
+			</div>
+
+		</div>
 
 
 	</div>
 
 
 	<div id="footer">
-		Footer goes here
+		<div id="school_logo">
+			<img id="BU_logo" class="image" src="../Images/last_hackbu.png"/>
+		</div>
+
+		<div id="team_info" class="sub_header">
+			WCP18<br>Isaac Patka<br>
+			Priscilla Li<br>Vivian Mo<br>
+			Mehdi Lamkies
+		</div>
+
 	</div>
 
 </body>
