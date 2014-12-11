@@ -25,28 +25,24 @@
 					<th></th>
 
 					{{#nozzle_header}}
-    				<th class="column_label body">{{nozzle_name}}</th>
+    					<th class="column_label body">
+    						{{nozzle_name}}
+    					</th>
     				{{/nozzle_header}}
-
   				</tr>
 
-
   				{{#nozzle_rows}}
-
-  					
-
     				<tr>
-    					<td class="row_label body">{{row_name}}</td>
+    					<td class="row_label body">
+    						{{row_name}}
+    					</td>
+
     					{{#valve_columns}}
-
-
     					<td>
     						<div id="{{row_id}}_{{valve_id}}"class="valve_button">
     						</div>
     					</td>
     					{{/valve_columns}}
-
-
 
     				</tr>
 				{{/nozzle_rows}}
@@ -59,6 +55,8 @@
 
 		<div id="input_buttons">
 			<a class="button body" href="/Home">Back</a>
+
+			<div class="button body" id="submit">Submit</div>
 
 			<div class="button body" id="add_more_rows">Add More Rows</div>
 		</div>
