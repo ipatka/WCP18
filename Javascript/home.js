@@ -41,4 +41,17 @@ $(document).ready(function(){
 		});
 
 
+		$("#live_feed").click(function(){
+			swal("Webcam Disconnected","Please reconnect the webcam","warning")
+		})
+
+		$("#BU_logo").click(function(){
+			swal({   title: "You clicked a kitty!",   text: "Here's Vivan.",   imageUrl: "../Images/Vivian.jpg" });
+		})
+
+		$("#team_info").click(function(){
+			swal({   title: "Who are we?",   text: "WCP18!",   imageUrl: "../Images/wcp18_team.png" });
+		})
+
+
 });//done ready
