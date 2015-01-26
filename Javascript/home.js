@@ -38,6 +38,7 @@ $(document).ready(function(){
 
 		$("#add_to_queue").click(function() {
 			swal("Warning!", "Select a valid sequence!", "warning")	
+			//post to /Controller/sequence_manager the id of the sequence
 		});
 
 
