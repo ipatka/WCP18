@@ -29,15 +29,22 @@ function create_sequence_object() {
 
 	$(".row").each(function(i) {
 
-		$(".valve_button").each(function() {
+		$(this).find(".valve_button").each(function() {
+			//initialize the array
 			if ($(this).hasClass("valve_selected")) {
-				var row = $(this).closest('tr').attr('id');
+				var row = $(this).closest('.row').attr('id');
 				console.log(row);
 				console.log(this.id);
 
+				//insert 'on' into the array
+
+			}
+			else{
+				//insert 'off' into the array
+			}
+
 				//insert into the sequence_object the row id, an array of on/off and the frame length
 
-			};
 		});
 	});
 
