@@ -7,8 +7,8 @@
  * @license :  see the LICENSE file this source code was distribued with
  * @version //autogentag//
  */
-require_once $_SERVER['DOCUMENT_ROOT'].'/external_libraries/php-blinker/vendor/autoload.php';
-use PhpGpio\Gpio;
+require '../external_libraries/php-blinker/vendor/autoload.php';
+//use PhpGpio\Gpio;
 
 
 require '../Controller/buttons.php';

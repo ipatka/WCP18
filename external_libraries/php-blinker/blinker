@@ -23,30 +23,35 @@ if ('root' !== $_SERVER['USER'] || empty($_SERVER['SUDO_USER'])) {
     throw new \Exception($msg);
 }
 
-// Am I using only 2 integer arguments ?
+// Am I using only 3 integer arguments ?
 if (
-    !(3 === $argc)
+    !(4 === $argc)
     || (0 >= (int)($argv[1]))
     || (0 >= (int)($argv[2]))
+    || (0 >= (int)($argv[3]))
 ) {
-    echo $msg = "This script expect 2 positive integer arguments: please check the README file";
+    echo $msg = "This script expect 3 positive integer arguments: please check the README file";
     throw new \Exception($msg);
 }
 
 
-$pin = (int)$argv[1];
-$sleeper = (int)$argv[2];
+$pin_1 = (int)$argv[1];
+$pin_2 = (int)$argv[2];
+$sleeper = (int)$argv[3];
 $gpio = new GPIO();
 
-if(!in_array($pin, $gpio->getHackablePins())){
-    echo $msg = "$pin is not a hackable gpio pin number";
+if(!in_array($pin_1, $gpio->getHackablePins())){
+    echo $msg = "$pin_1 is not a hackable gpio pin number";
     throw new \InvalidArgumentException($msg);
 }
 
-$gpio->setup($pin, "out");
-$gpio->output($pin, 1);
+$gpio->setup($pin_1, "out");
+$gpio->setup($pin_2, "out");
+$gpio->output($pin_1, 1);
+$gpio->output($pin_2, 1);
 usleep($sleeper);
-$gpio->output($pin, 0);
+$gpio->output($pin_1, 0);
+$gpio->output($pin_2, 0);
 
 $gpio->unexportAll();
 
