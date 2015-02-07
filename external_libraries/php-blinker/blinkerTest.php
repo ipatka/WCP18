@@ -1,4 +1,4 @@
 <?php
 
 # blinkTester.php
-exec('sudo ./blinker 17 27 200000');
+exec('sudo ./fountain_frame 17 27 200000');
