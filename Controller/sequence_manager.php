@@ -21,7 +21,7 @@ class Controller_Sequence_Manager extends Controller_Base {
 
     public function route() {
         
-	exec('sudo ./../external_libraries/php-blinker/myBlinker 17 27 1');
+	
         $sequence_array = $_POST["sequence_post"];
         $frame = 1;
         foreach ($sequence_array as $key => $value) {
@@ -36,15 +36,17 @@ class Controller_Sequence_Manager extends Controller_Base {
                 }
                 else {
                     echo json_encode("frame_length"), json_encode($value_b);
+                    $frame_length = $value_b;
                 }
 
 
                 $entry++;
             }
+
             echo "\n";
             $frame++;
         }
-
+        exec('sudo ./../external_libraries/php-blinker/myBlinker 17 27 $frame_length');
         
 
     }
