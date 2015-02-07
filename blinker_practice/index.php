@@ -8,21 +8,7 @@
  * @version //autogentag//
  */
 require_once $_SERVER['DOCUMENT_ROOT'].'/external_libraries/php-blinker/vendor/autoload.php';
-use Symfony\Component\HttpFoundation\Response;
 use PhpGpio\Gpio;
-$app = new Silex\Application();
-$app->get('/blink/{id}', function ($id) use ($app) {
-    $msg = exec("sudo -t /usr/bin/php ../blinker $id 90000");
-    $code = ("" === trim($msg)) ? 200 : 500;
-    return new Response($msg, $code);
-});
-$app->get('/', function () use ($app) {
-    require_once __DIR__.'/buttons.html';
-    return "";
-});
-$app['debug'] = true;
-$app->run();
-
 
 
 require '../Controller/buttons.php';
