@@ -41,10 +41,17 @@
 }
 
 .row_label{
-
+text-align: center;
 
 }
 
 .column_label{
 	
+}
+
+.frame_length{
+	width: 50px;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
 }
