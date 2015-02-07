@@ -22,7 +22,7 @@ class GpioTest extends \PhpUnit_Framework_TestCase
         // and the 4th Gpio pin is reserved to read the DS18B20 sensor.
         // Other available gpio pins are connected to LEDs
         $this->hackablePins = array(
-           17, 18, 21, 22, 23,24, 25
+           17, 18, 21, 22, 23,24, 25, 4
        );
     }
 
