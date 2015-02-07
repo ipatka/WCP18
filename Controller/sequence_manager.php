@@ -36,7 +36,7 @@ class Controller_Sequence_Manager extends Controller_Base {
                 }
                 else {
                     echo json_encode("frame_length"), json_encode($value_b);
-                    $frame_length = $value_b;
+                    $frame_length = (int)$value_b;
                 }
 
 
