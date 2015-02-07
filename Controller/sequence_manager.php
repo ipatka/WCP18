@@ -35,18 +35,19 @@ class Controller_Sequence_Manager extends Controller_Base {
 
                 }
                 else {
-                    echo json_encode("frame_length"), json_encode($value_b);
-                    $frame_length = (int)$value_b;
+                    echo json_encode("frame_length"), json_encode((int)$value_b);
+                    $frame_length = $value_b;
+		
                 }
 
 
                 $entry++;
             }
-
+		exec('sudo ./../external_libraries/php-blinker/myBlinker 17 27 "$frame_length"');
             echo "\n";
             $frame++;
         }
-        exec('sudo ./../external_libraries/php-blinker/myBlinker 17 27 1');
+        
         
 
     }
