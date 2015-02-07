@@ -1,0 +1,327 @@
+Xsession: X session started for wcp18 at Sat Feb  7 17:21:36 UTC 2015
+localuser:wcp18 being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+
+(lxpanel:7053): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(lxpanel:7053): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(lxpanel:7053): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(lxpanel:7053): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxpanel:7053): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-entry-select-on-focus after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-entry-password-hint-timeout after class was initialised
+
+(pcmanfm:7055): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(pcmanfm:7055): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(lxpanel:7053): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(lxterminal:7106): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(lxterminal:7106): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(lxterminal:7106): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(lxterminal:7106): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(lxterminal:7106): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(lxterminal:7106): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxterminal:7106): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(pcmanfm:7055): GLib-GObject-CRITICAL **: g_object_ref: assertion 'G_IS_OBJECT (object)' failed
+
+(pcmanfm:7055): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(pcmanfm:7055): GLib-GObject-CRITICAL **: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(pcmanfm:7055): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(leafpad:7122): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:7122): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:7122): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:7122): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:7122): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:7122): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:7122): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:7125): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:7125): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:7125): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:7125): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:7125): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:7125): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:7125): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-entry-select-on-focus after class was initialised
+
+(leafpad:7129): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-entry-password-hint-timeout after class was initialised
+
+(leafpad:7129): Gtk-WARNING **: Attempting to store changes into `/home/wcp18/WCP18/.local/share/recently-used.xbel', but failed: Failed to create file '/home/wcp18/WCP18/.local/share/recently-used.xbel.PH21TX': No such file or directory
+
+(leafpad:7129): Gtk-WARNING **: Attempting to set the permissions of `/home/wcp18/WCP18/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(leafpad:7129): Gtk-WARNING **: Attempting to store changes into `/home/wcp18/WCP18/.local/share/recently-used.xbel', but failed: Failed to create file '/home/wcp18/WCP18/.local/share/recently-used.xbel.1PF1TX': No such file or directory
+
+(leafpad:7129): Gtk-WARNING **: Attempting to set the permissions of `/home/wcp18/WCP18/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(leafpad:7142): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:7142): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:7142): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:7142): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:7142): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:7142): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:7142): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:7150): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:7150): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:7150): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:7150): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:7150): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:7150): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:7150): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-entry-select-on-focus after class was initialised
+
+(leafpad:7159): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-entry-password-hint-timeout after class was initialised
+
+(leafpad:7129): Gtk-WARNING **: Attempting to store changes into `/home/wcp18/WCP18/.local/share/recently-used.xbel', but failed: Failed to create file '/home/wcp18/WCP18/.local/share/recently-used.xbel.9IE0TX': No such file or directory
+
+(leafpad:7129): Gtk-WARNING **: Attempting to set the permissions of `/home/wcp18/WCP18/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(leafpad:7556): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:7556): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:7556): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:7556): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:7556): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:7556): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:7556): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:8060): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:8060): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:8060): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:8060): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:8060): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:8060): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:8060): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:8190): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:8190): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:8190): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:8190): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:8190): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:8190): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:8190): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(pcmanfm:7055): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(pcmanfm:7055): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(pcmanfm:7055): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(leafpad:8354): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:8354): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:8354): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:8354): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:8354): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:8354): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:8354): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(pcmanfm:7055): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(pcmanfm:7055): GLib-CRITICAL **: Source ID 131 was not found when attempting to remove it
+
+(leafpad:8442): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:8442): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:8442): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:8442): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:8442): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:8442): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:8442): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:8500): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:8500): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:8500): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:8500): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:8500): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:8500): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:8500): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:8514): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:8514): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:8514): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:8514): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:8514): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:8514): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:8514): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(pcmanfm:7055): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-entry-select-on-focus after class was initialised
+
+(leafpad:8629): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-entry-password-hint-timeout after class was initialised
+paths: creating directory /home/wcp18/WCP18/.dillo.
+paths: Cannot open file '/home/wcp18/WCP18/.dillo/dillorc'
+paths: Using /etc/dillo/dillorc
+paths: Cannot open file '/home/wcp18/WCP18/.dillo/keysrc'
+paths: Using /etc/dillo/keysrc
+dillo_dns_init: Here we go! (threaded)
+Cookies: Created file: /home/wcp18/WCP18/.dillo/cookiesrc
+Disabling cookies.
+Nav_open_url: new url='file:/home/wcp18/WCP18/Templates/buttons.mustache'
+** ERROR **: [Dpi_read_comm_keys] No such file or directory
+Dpi_blocking_start_dpid: try 1
+Dillo: normal exit!
+paths: Cannot open file '/home/wcp18/WCP18/.dillo/dillorc'
+paths: Using /etc/dillo/dillorc
+paths: Cannot open file '/home/wcp18/WCP18/.dillo/keysrc'
+paths: Using /etc/dillo/keysrc
+dillo_dns_init: Here we go! (threaded)
+Disabling cookies.
+Nav_open_url: new url='file:/home/wcp18/WCP18/Templates/buttons.mustache'
+Dillo: normal exit!
+The program 'midori' received an X Window System error.
+This probably reflects a bug in the program.
+The error was 'BadWindow (invalid Window parameter)'.
+  (Details: serial 644 error_code 3 request_code 20 minor_code 0)
+  (Note to programmers: normally, X errors are reported asynchronously;
+   that is, you will receive the error a while after causing it.
+   To debug your program, run it with the --sync command line
+   option to change this behavior. You can then get a meaningful
+   backtrace from your debugger if you break on the gdk_x_error() function.)

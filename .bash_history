@@ -175,3 +175,78 @@ exit
 ls
 sudo visudo
 exit
+ls
+cd external_libraries/php-blinker/
+ls
+php blinkerTest.php 
+ls
+sudo nano blinkerTest.php 
+php blinkerTest.php 
+sudo nano blinker
+php blinkerTest.php 
+sudo nano blinkerTest.php 
+php blinkerTest.php 
+sudo nano blinker
+sudo nano blinkerTest.php 
+sudo nano blinker
+php blinkerTest.php 
+cd .
+ls
+cd ..
+ls
+cd ..
+git status
+git add .
+git commit -m "modified blinker"
+git pull origin master
+git push origin master
+ls
+cd external_libraries/
+ls
+cd php-blinker/
+ls
+sudo nano blinker
+cd ..
+cd ..
+git pull origin master
+sudo visudo
+sudo visudo
+sudo nano blinkerTest
+ls
+cd external_libraries/php-blinker/
+ls
+sudo nano blinkerTest.php 
+php blinkerTest.php 
+sudo nano blinkerTest.php 
+sudo nano blinkerTest.php 
+php blinkerTest.php 
+cd /
+ls
+cd /home/wcp18/WCP18/
+git pull origin master
+php blinkerTest.php 
+cd external_libraries/php-blinker/
+php blinkerTest.php 
+php -l blinker
+sudo nano blinker
+sudo nano blinker
+sudo nano blinker
+php -l blinker
+php blinkerTest.php 
+sudo nano blinkerTest.php 
+php blinkerTest.php 
+php blinkerTest.php 
+sudo nano blinker
+php blinkerTest.php 
+ls
+sudo nano src/PhpGpio/Gpio.php
+php blinkerTest.php 
+sudo nano src/PhpGpio/Gpio.php
+ls
+sudo nano blinker
+php blinkerTest.php
+sudo nano blinker
+sudo nano blinker
+php blinkerTest.php
+sudo nano blinker
+php blinkerTest.php
