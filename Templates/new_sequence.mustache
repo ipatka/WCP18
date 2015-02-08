@@ -36,7 +36,7 @@
   				</tr>
 
   				{{#nozzle_rows}}
-    				<tr id="{{row_name}}" class="row">
+    				<tr id="{{row_name}}" data-count="{{row_number}}" class="row">
     					<td class="row_label body">
     						{{row_name}}
     					</td>
@@ -60,6 +60,7 @@
 							<option value="8">8</option>
 							<option value="9">9</option>
 							<option value="10">10</option>
+							<option value="0">X</option>
 							</select>
     					</td>
 

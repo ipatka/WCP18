@@ -27,6 +27,7 @@ class Controller_Sequence extends Controller_Base {
         	// Array for mustache to render
 			$data["nozzle_rows"][$j]["row_name"] = "frame ".($j+1);
 			$data["nozzle_rows"][$j]["row_id"] = "row".($j+1);
+            $data["nozzle_rows"][$j]["row_number"] = ($j+1);
 
 			}
 

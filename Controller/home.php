@@ -16,7 +16,7 @@ class Controller_Home extends Controller_Base {
         $number_of_fields = 3;
 
 
-        for ($i=0; $i < 4; $i++) { 
+        for ($i=0; $i < 10; $i++) { 
     		
         	// Array for mustache to render
     	    $data["sequence_option"][$i]["sequence_name"] = "sequence ".($i+1);
