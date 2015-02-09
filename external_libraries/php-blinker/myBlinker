@@ -21,7 +21,7 @@ use PhpGpio\Gpio;
 // $sleep_time = (int)$sleep_time_received;
 
 
-$pin = stripslashes($argv[1]);
+$pin = unserialize($argv[1]);
 
 //$pin[0] = 17;
 //$pin[1] = 27;
