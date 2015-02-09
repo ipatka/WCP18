@@ -7,14 +7,18 @@ $(document).ready(function(){
 
 	});
 
+
+
 	$(document).on("click","#add_more_rows", function() {
 		console.log("add_more_rows");
-
+		var row_template = getNextRow();
+		$('tr:last').after(row_template);
 	});
 
 
 	$(document).on("click","#submit", function() {
-		var object_to_post = create_sequence_object();
+		var num_rows = $( "tr:last" ).data('count');
+		var object_to_post = create_sequence_object(num_rows);
 		$.post('/Controller/sequence_manager.php',{
 			sequence_post: object_to_post
 		}
@@ -26,9 +30,9 @@ $(document).ready(function(){
 
 
 
-function create_sequence_object() {
+function create_sequence_object(num_rows) {
 
-	var rows = 20;
+	var rows = num_rows;
 	var new_sequence = createArray(rows,9);
 	// sequence_object.new_sequence[8][6] = 6;
 	//console.log("array "+sequence_object.new_sequence);
@@ -76,6 +80,17 @@ function createArray(length) {
     }
 
     return arr;
+}
+
+
+function getNextRow() {
+	var template = $('<tr class="row"> <td class="row_label body"></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td class="row_label"> <select class="frame_length"> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="0">X</option> </select> </td></tr>');
+	var rows = $( "tr:last" ).data('count');
+	var next_row_number = rows + 1;
+
+	template.data('count',next_row_number);
+	template.find('.body').text('frame '+next_row_number);
+	return template;
 }
 
 

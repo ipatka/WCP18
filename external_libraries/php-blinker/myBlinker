@@ -17,8 +17,8 @@ for ($i = 1; $i < ($pin_count); $i++) {
 
 }
 
-$sleep_time = (int)$argv[$sleep_argument];
-
+$sleep_time_received = stripslashes($argv[$sleep_argument]);
+$sleep_time = (int)$sleep_time_received;
 
 
 echo "Setting up pin 17\n";
