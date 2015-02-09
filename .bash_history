@@ -250,3 +250,205 @@ sudo nano blinker
 php blinkerTest.php
 sudo nano blinker
 php blinkerTest.php
+cd /usr
+cd /bin
+cd /php
+ls
+cd ..
+ls
+cd /bin
+l
+ls
+cd env
+cd ~
+ls
+cd Desktop/
+ls
+cd php-blinker/
+ls
+chmod 0755 /path/to/script.php
+chmod 0755 myBlinker
+./myBlinker
+sudo ./myBlinker
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17
+sudo ./myBlinker 17 27
+sudo ./myBlinker 17 27 200000
+sudo ./myBlinker 17 27 200000
+sudo ./myBlinker 17 27
+sudo ./myBlinker 17 27 4
+sudo ./myBlinker 17 27 4
+sudo ./myBlinker 17 27 4
+sudo ./myBlinker 17 27 4
+sudo ./myBlinker 17 27 4
+sudo ./myBlinker 17 27 4
+sudo ./myBlinker 17 27 1
+sudo ./myBlinker 17 27 5
+php blinkerTest.php
+php blinkerTest.php
+php blinkerTest.php
+php blinkerTest.php
+ls
+cd ..
+ls
+cd ..
+ls
+cd Controller/
+ls
+cd php-blinker/
+ls
+sudo ./myBlinker 17 2
+ls
+cd ..
+s
+ls
+php blinkerTest.php 
+php blinkerTest.php 
+ls
+cd ..
+ls
+php blinkerTest.php 
+ls
+cd Controller/
+ls
+php blinkerTest.php 
+sudo visudo
+cd ..
+ls
+git add .
+git commit -m 'refresh makes blink"
+'
+git pull origin master
+git push origin master
+git push origin master
+git add .
+git commit -m "
+submit button blinks leds"
+git push origin master
+git add .
+git commit -m "working on frame length"
+git push origin master
+shutdown -h now
+sudo shutdown -h now
+sudo apt-get install phpmyadmin
+nano /etc/apache2/apache2.conf
+sudo nano /etc/apache2/apache2.conf
+/etc/init.d/apache2 restart
+sudo nano /etc/apache2/apache2.conf
+ls /etc/phpmyadmin
+sudo nano /etc/apache2/apache2.conf
+sudo /etc/init.d/apache2 restart
+startx
+gpio mode 2 out
+gpio write 2 1
+gpio write 2 0
+php blinkerTest.php
+ls
+cd Desktop/
+ls
+cd php-blinker/
+ls
+php blinkerTest.php
+cd
+ls
+ccd ..
+ls
+cd ..
+ls
+cd WCP18/
+ls
+cd external_libraries/php-blinker/
+ls
+sudo nano blinkerTest.php 
+cd ..
+ls
+cd ..
+ls
+git pull origin master
+gs
+git pull origin master
+git pull origin master
+cd /etc/network
+ls
+sudo nano interfaces
+sudo nano interfaces
+cd ..
+ls
+cd wpa_supplicant/
+ls
+sudo nano wpa_supplicant
+sudo nano wpa_supplicant.conf
+ls
+sudo nano wpa_supplicant.conf
+cd ..
+sudo reboot
+startx
+sudo nano /etc/network/interfaces
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+sudo nano /etc/network/interfaces
+sudo reboot
+sudo nano /etc/network/interfaces
+sudo nano /etc/network/interfaces
+startx
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+sudo ifup wlan0
+lsusb
+sudo ifup wlan9
+sudo ifup wlan0
+sudo nano /etc/network/interfaces
+sudo ifup wlan0
+ifconfig
+sudo reboot
+startx
+sudo shutdown -h now
+ls
+cd ..
+ls
+mkdir email_ip
+ls
+cd email_ip/
+nano startup_mailer.py
+sudo chmod +x startup_mailer.py
+sudo nano /boot/boot.rc
+cd /boot/
+ls
+sudo nano .bashrc
+cd ~
+ls
+cd ..
+ls
+cd email_ip/
+nano launcher.sh
+nano startup_mailer.py 
+py startup_mailer.py 
+python startup_mailer.py 
+sudo nano /etc/rc.local 
+sudo nano /etc/rc.local 
+sudo reboot
+shutdown
+sudo shutdown -h now
+ls
+cd ..
+ls
+sudo su
+exit
+tzselect
+exit
+exit
+ls

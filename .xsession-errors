@@ -437,3 +437,141 @@ The error was 'BadWindow (invalid Window parameter)'.
 (leafpad:11405): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
 
 (leafpad:11405): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-scrolled-window-placement after class was initialised
+[file dpi]: (v.2) accepting connections...
+[file dpi]: 
+exit(signum), signum=1
+
+
+(openbox:7051): GLib-CRITICAL **: Source ID 15 was not found when attempting to remove it
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 154975 requests (153924 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Xsession: X session started for wcp18 at Sat Feb  7 18:51:33 UTC 2015
+localuser:wcp18 being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+
+(lxpanel:3064): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(lxpanel:3064): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(lxpanel:3064): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(lxpanel:3064): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxpanel:3064): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+
+(pcmanfm:3066): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(pcmanfm:3066): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(pcmanfm:3066): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(pcmanfm:3066): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(pcmanfm:3066): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxterminal:3104): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(lxterminal:3104): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(lxterminal:3104): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(lxterminal:3104): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(lxterminal:3104): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(lxterminal:3104): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxterminal:3104): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(lxpanel:3064): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 4013 requests (4010 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Xsession: X session started for wcp18 at Sat Feb  7 18:59:51 UTC 2015
+localuser:wcp18 being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+
+(lxpanel:3061): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(lxpanel:3061): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(lxpanel:3061): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(lxpanel:3061): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxpanel:3061): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+
+(pcmanfm:3063): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(pcmanfm:3063): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(pcmanfm:3063): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(pcmanfm:3063): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(pcmanfm:3063): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxpanel:3061): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(lxterminal:3103): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(lxterminal:3103): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(lxterminal:3103): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(lxterminal:3103): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(lxterminal:3103): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(lxterminal:3103): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxterminal:3103): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 6219 requests (6216 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Xsession: X session started for wcp18 at Sat Feb  7 19:08:57 UTC 2015
+localuser:wcp18 being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+
+(lxpanel:3020): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(lxpanel:3020): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(lxpanel:3020): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(lxpanel:3020): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxpanel:3020): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+
+(pcmanfm:3022): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(pcmanfm:3022): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(pcmanfm:3022): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(pcmanfm:3022): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(pcmanfm:3022): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxpanel:3020): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+
+(lxterminal:3073): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+
+(lxterminal:3073): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+
+(lxterminal:3073): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+
+(lxterminal:3073): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+
+(lxterminal:3073): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+
+(lxterminal:3073): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+
+(lxterminal:3073): GLib-GObject-WARNING **: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 15380 requests (15377 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
