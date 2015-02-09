@@ -5,25 +5,30 @@ require 'vendor/autoload.php';
 
 use PhpGpio\Gpio;
 
-$arguments_count = (int)$argc;
-echo "$arguments_count\n";
+// $arguments_count = (int)$argc;
+// echo "$arguments_count\n";
 
-$pin_count = $arguments_count - 1;
-$sleep_argument = $pin_count;
+// $pin_count = $arguments_count - 1;
+// $sleep_argument = $pin_count;
 
-for ($i = 1; $i < ($pin_count); $i++) {
-	echo 'count';
-	$pin[$i] = (int)stripslashes($argv[$i]);
+// for ($i = 1; $i < ($pin_count); $i++) {
+// 	echo 'count';
+// 	$pin[$i] = (int)stripslashes($argv[$i]);
 
-}
+// }
 
-$sleep_time_received = stripslashes($argv[$sleep_argument]);
-$sleep_time = (int)$sleep_time_received;
+// $sleep_time_received = stripslashes($argv[$sleep_argument]);
+// $sleep_time = (int)$sleep_time_received;
+
+
+$pin = (int)stripslashes($argv[1]);
+$pin_count = count($pin);
+$sleep_time = (int)stripslashes($argv[2]);
 
 
 echo "Setting up pin 17\n";
 $gpio = new GPIO();
-for ($i = 1; $i < $pin_count; $i++) {
+for ($i = 1; $i <= $pin_count; $i++) {
 
 	$gpio->setup($pin[$i], "out");
 
@@ -32,7 +37,7 @@ for ($i = 1; $i < $pin_count; $i++) {
 
 echo "Turning on pin 17\n";
 
-for ($i = 1; $i < $pin_count; $i++) {
+for ($i = 1; $i <= $pin_count; $i++) {
 
 	$gpio->output($pin[$i], 1);
 
@@ -41,7 +46,7 @@ echo "Sleeping!\n";
 sleep($sleep_time);
 
 echo "Turning off pin 17\n";
-for ($i = 1; $i < $pin_count; $i++) {
+for ($i = 1; $i <= $pin_count; $i++) {
 
 	$gpio->output($pin[$i], 0);
 

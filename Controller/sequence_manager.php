@@ -44,7 +44,8 @@ class Controller_Sequence_Manager extends Controller_Base {
                 $entry++;
             }
 
-            $pins = 17;
+            $pins[1] = 17;
+            $pins[2] = 27;
 		exec('sudo ./../external_libraries/php-blinker/myBlinker "' . addslashes($pins) . '" "' . addslashes($frame_length) . '"');
             echo "\n";
             $frame++;
