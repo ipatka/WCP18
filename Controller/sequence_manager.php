@@ -32,7 +32,7 @@ class Controller_Sequence_Manager extends Controller_Base {
             foreach ($value as $sub_array => $value_b) {
                 if ($entry < 9) {
                     if ($value_b == 1) {
-                        $pins[$pin_counter] = $interpret[$pin_counter];
+                        $pins[$pin_counter] = $interpret[$entry-1];
                         $pin_counter++;
                     }
                     echo json_encode("nozzle"), json_encode($entry);
