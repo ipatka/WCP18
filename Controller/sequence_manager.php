@@ -43,12 +43,19 @@ class Controller_Sequence_Manager extends Controller_Base {
 
                 $entry++;
             }
-		exec('sudo ./../external_libraries/php-blinker/myBlinker 17 27 "$frame_length"');
+		exec('sudo ./../external_libraries/php-blinker/myBlinker 17 27 "' . addslashes($frame_length) . '"');
             echo "\n";
             $frame++;
         }
         
         
+
+    }
+
+    public function interpret() {
+
+        exec('sudo ./../external_libraries/php-blinker/myBlinker 17 27 "$frame_length"');
+
 
     }
 }
