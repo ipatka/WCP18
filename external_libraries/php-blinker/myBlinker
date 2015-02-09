@@ -21,10 +21,10 @@ use PhpGpio\Gpio;
 // $sleep_time = (int)$sleep_time_received;
 
 
-$pin = (int)stripslashes($argv[1]);
+$pin = stripslashes($argv[1]);
 
-// $pin[0] = 17;
-// $pin[1] = 27;
+//$pin[0] = 17;
+//$pin[1] = 27;
 $pin_count = count($pin);
 $sleep_time = (int)stripslashes($argv[2]);
 //$sleep_time = 3;
