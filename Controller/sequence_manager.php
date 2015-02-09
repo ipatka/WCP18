@@ -26,12 +26,14 @@ class Controller_Sequence_Manager extends Controller_Base {
         $frame = 1;
         foreach ($sequence_array as $key => $value) {
             $entry = 1;
+            $pin_counter = 0;
             echo json_encode("frame");
             echo json_encode($frame);
             foreach ($value as $sub_array => $value_b) {
                 if ($entry < 9) {
                     if ($value_b == 1) {
-                        $pins[$entry - 1] = $interpret[$entry - 1];
+                        $pins[$pin_counter] = $interpret[$pin_counter];
+                        $pin_counter++;
                     }
                     echo json_encode("nozzle"), json_encode($entry);
                     echo json_encode("state"), json_encode($value_b);
