@@ -22,7 +22,7 @@ class Controller_Sequence extends Controller_Base {
     	    $data["valve_columns"][$i]["valve_id"] = "valve".($i+1);
 			}
 
-			for ($j=0; $j < 1; $j++) { 
+			for ($j=0; $j < 20; $j++) { 
     		
         	// Array for mustache to render
 			$data["nozzle_rows"][$j]["row_name"] = "frame ".($j+1);
