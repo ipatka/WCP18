@@ -21,9 +21,16 @@ class Controller_Sequence_Manager extends Controller_Base {
 
     public function route() {
         
+        // 2 main functions
+        // 1. receives the $sequence_array, parse, put in database
+        // 2. receives the name of a sequence, queries the database, 
+        //      retrieves the sequence data, and executes ()
+
+
 	    $interpret = array(4 , 17 , 27 , 22 , 18 , 23 , 24 , 25);
         $sequence_array = $_POST["sequence_post"];
         $frame = 1;
+        // need to put sequence data into the database instead of just printing
         foreach ($sequence_array as $key => $value) {
             $entry = 1;
             $pin_counter = 0;
