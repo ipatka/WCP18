@@ -33,14 +33,17 @@ class Controller_Sequence_Manager extends Controller_Base {
         // need to put sequence data into the database instead of just printing
         foreach ($sequence_array as $key => $value) {
             $entry = 1;
-            $pin_counter = 0;
+            $pin_open_counter = 0;
+            $pin_close_counter = 0;
             echo json_encode("frame");
             echo json_encode($frame);
             foreach ($value as $sub_array => $value_b) {
                 if ($entry < 9) {
                     if ($value_b == 1) {
-                        $pins[$pin_counter] = $interpret[$entry-1];
-                        $pin_counter++;
+                        $pins_open[$pin_open_counter] = $interpret[$entry-1];
+                        $pin_open_counter++;
+                    } else {
+                        $pins_close[$pin_close_counter] = $interpret[$entry-1];
                     }
                     echo json_encode("nozzle"), json_encode($entry);
                     echo json_encode("state"), json_encode($value_b);
@@ -56,13 +59,22 @@ class Controller_Sequence_Manager extends Controller_Base {
                 $entry++;
             }
 
-            // $pins[0] = 17;
-            // $pins[1] = 27;
-		  exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins) . '" "' . addslashes($frame_length) . '"');
-            unset($pins);
+            // $pins_open[0] = 17;
+            // $pins_open[1] = 27;
+		  exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins_open) . '" "' . serialize($pins_close) . '" "' . addslashes($frame_length) . '"');
+            unset($pins_open);
+            unset($pins_close);
             echo "\n";
             $frame++;
         }
+        // No pins to open
+        $pins_open;
+        // Close all pins
+        $pins_close = $interpret;
+        // frame length not important
+        $frame_length = 1;
+        // turn off pins
+        exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins_open) . '" "' . serialize($pins_close) . '" "' . addslashes($frame_length) . '"');
         
         
 
