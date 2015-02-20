@@ -21,11 +21,18 @@ $(document).ready(function(){
 		var object_to_post = create_sequence_object(num_rows);
 		$.post('/Controller/sequence_manager.php',{
 			sequence_post: object_to_post
-		}
-		,function(data) {
+		},
+		function(data) {
 				console.log("posted. here's the data returned: "+data);
 			});
 		//post the object to /Controller/sequence_manager.php
+	});
+
+
+	$(document).on('click', '#preview', function() {
+		var num_rows = $( "tr:last" ).data('count');
+		var object_to_preview = create_sequence_object(num_rows);
+		preview_sequence(object_to_preview);
 	});
 
 
@@ -93,5 +100,30 @@ function getNextRow() {
 	return template;
 }
 
+
+function preview_sequence(sequence) {
+	var num_rows = $( "tr:last" ).data('count');
+	for (var i = 0; i < num_rows; i++) {
+		var delay_time = sequence[i][8];
+		animate_frame(sequence[i]);
+		window.setTimeout(clear_frame, 1000 * delay_time);
+		
+	}
+}
+
+function animate_frame(frame) {
+	for (var j = 0; j < 8; j++) {
+		if (frame[j] == 1) {
+			$('#valve_'+(j+1)).css('background-color','red');
+		}
+		
+	}
+}
+
+function clear_frame() {
+	for (var j = 0; j < 8; j++) {
+		$('#valve_'+(j+1)).css('background-color','gray');
+	}
+}
 
 });//done ready

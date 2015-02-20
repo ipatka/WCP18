@@ -34,6 +34,7 @@
 	border: #979797 solid 1px;
 	background-color: rgba(155,155,155,.5);
 	border-radius: 6px;
+	display: inline-block;
 }
 
 .valve_selected{
