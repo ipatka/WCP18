@@ -31,6 +31,20 @@ class Controller_Sequence extends Controller_Base {
 
 			}
 
+            for ($k=0; $k < 11; $k++) { 
+            
+            // Array for mustache to render
+            $data["frame_length_options"][$k]["option"] = $k+1;
+
+            }
+
+            for ($k=11; $k < 20; $k++) { 
+            
+            // Array for mustache to render
+            $data["frame_length_options"][$k]["option"] = 0.1 * ($k-10);
+
+            }
+
 
 
 
