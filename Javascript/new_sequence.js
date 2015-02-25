@@ -115,6 +115,7 @@ function preview_sequence(sequence) {
 function animate_frame(frame) {
 	console.log('frame '+frame);
 	for (var j = 0; j < 8; j++) {
+		console.log('nozzle '+frame[j]);
 		if (frame[j] == 1) {
 			$('#valve_'+(j+1)).css('background-color','red');
 		}
