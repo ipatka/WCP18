@@ -51,15 +51,15 @@ class Controller_Base {
             $data['connection'] = "Error: Can't connect to the database.";
         } else {
             //return $database;
-            $data['connection'] = 'connected';
+            $data['connection'] = $this->connect_error;
         }
 
-        if ($result = $this->query($query)) {
-            $data['numRows'] = $result->num_rows;
-            # code...
-        } else {
+       // if ($result = $this->query($query)) {
+       //     $data['numRows'] = $result->num_rows;
+       //     # code...
+       // } else {
             $data['numRows'] = 'nope';
-        }
+       // }
 
         //$data = 'we made it';
         // if ($result = $this->query($query)) {
