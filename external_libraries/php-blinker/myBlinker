@@ -48,7 +48,7 @@ for ($i = 1; $i <= $pin_close_count; $i++) {
 }
 
 echo "Sleeping!\n";
-sleep($sleep_time);
+usleep($sleep_time * 1000);
 
 // echo "Turning off pin 17\n";
 // for ($i = 1; $i <= $pin_open_count; $i++) {
