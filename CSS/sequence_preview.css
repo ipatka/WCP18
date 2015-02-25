@@ -12,3 +12,24 @@
 	width: 700px;
 	height: 250px;
 }
+
+.preview_overlay{
+	position: absolute;
+	width: 60px;
+	height: 200px;
+	background-color: blue;
+	border-radius: 6px;
+}
+
+.stream_preview{
+	cursor: pointer;
+	text-align: center;
+	width: 60px;
+	height: 200px;
+	margin: 20px auto;
+	border: #979797 solid 1px;
+	background-color: rgba(155,155,155,.5);
+	border-radius: 6px;
+	display: inline-block;
+}
+

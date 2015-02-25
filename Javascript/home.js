@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+		$.post('../Controller/database_test.php',{get_names: 'test'}).done(function(data) {
+			var returned = jQuery.parseJSON(data);
+			console.log(returned);
+		});
+
+
 		var sequence_selected = false;
 		var selected_sequence;
 

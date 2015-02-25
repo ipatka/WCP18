@@ -8,9 +8,13 @@
   <link rel="stylesheet" type="text/css" href="../CSS/new_sequence.css">
   <link rel="stylesheet" type="text/css" href="../CSS/sequence_preview.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../Javascript/new_sequence.js"></script>
 	<script type="text/javascript" src="../Javascript/sequence_preview.js"></script>
 	<script type="text/javascript" src="../Javascript/blinker.js"></script>
+  <script type="text/javascript" src="../external_libraries/sweetalert-master/lib/sweet-alert.js"></script>
+     <link rel="stylesheet" type="text/css" href="../external_libraries/sweetalert-master/lib/sweet-alert.css">
 
 </head>
 
@@ -52,17 +56,10 @@
 
     					<td class="row_label">
 							<select class="frame_length">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="0">X</option>
+								{{#frame_length_options}}
+								<option value="{{option}}">{{option}}</option>
+								{{/frame_length_options}}
+
 							</select>
     					</td>
 
@@ -86,15 +83,31 @@
 
 		</div>
 
-	<div class="preview_content">
-		<div class="valve_button" id="valve_1"></div>
-		<div class="valve_button" id="valve_2"></div>
-		<div class="valve_button" id="valve_3"></div>
-		<div class="valve_button" id="valve_4"></div>
-		<div class="valve_button" id="valve_5"></div>
-		<div class="valve_button" id="valve_6"></div>
-		<div class="valve_button" id="valve_7"></div>
-		<div class="valve_button" id="valve_8"></div>
+	<div class="preview_content" style="display:none">
+		<div class="stream_preview" id="valve_1">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_2">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_3">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_4">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_5">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_6">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_7">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_8">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
 	</div>
 
 
