@@ -58,4 +58,4 @@ sleep($sleep_time);
 // }
 
 echo "Unexporting all pins\n";
-$gpio->unexportAll();
+//$gpio->unexportAll();

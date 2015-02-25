@@ -35,8 +35,8 @@ class Controller_Sequence_Manager extends Controller_Base {
             $entry = 1;
             $pin_open_counter = 0;
             $pin_close_counter = 0;
-            echo json_encode("frame");
-            echo json_encode($frame);
+           // echo json_encode("frame");
+           // echo json_encode($frame);
             foreach ($value as $sub_array => $value_b) {
                 if ($entry < 9) {
                     if ($value_b == 1) {
@@ -44,13 +44,14 @@ class Controller_Sequence_Manager extends Controller_Base {
                         $pin_open_counter++;
                     } else {
                         $pins_close[$pin_close_counter] = $interpret[$entry-1];
+			$pin_close_counter++;
                     }
-                    echo json_encode("nozzle"), json_encode($entry);
-                    echo json_encode("state"), json_encode($value_b);
+                   // echo json_encode("nozzle"), json_encode($entry);
+                   // echo json_encode("state"), json_encode($value_b);
 
                 }
                 else {
-                    echo json_encode("frame_length"), json_encode((int)$value_b);
+                   // echo json_encode("frame_length"), json_encode((int)$value_b);
                     $frame_length = $value_b;
 		
                 }
@@ -61,6 +62,8 @@ class Controller_Sequence_Manager extends Controller_Base {
 
             // $pins_open[0] = 17;
             // $pins_open[1] = 27;
+		echo json_encode('pins open'), json_encode($pins_open);
+		echo json_encode('pins close'), json_encode($pins_close);
 		  exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins_open) . '" "' . serialize($pins_close) . '" "' . addslashes($frame_length) . '"');
             unset($pins_open);
             unset($pins_close);
