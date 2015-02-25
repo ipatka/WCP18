@@ -103,6 +103,7 @@ function getNextRow() {
 
 function preview_sequence(sequence) {
 	var num_rows = $( "tr:last" ).data('count');
+	console.log('num rows '+num_rows);
 	for (var i = 0; i < num_rows; i++) {
 		var delay_time = sequence[i][8];
 		animate_frame(sequence[i]);
@@ -112,6 +113,7 @@ function preview_sequence(sequence) {
 }
 
 function animate_frame(frame) {
+	console.log('frame '+frame);
 	for (var j = 0; j < 8; j++) {
 		if (frame[j] == 1) {
 			$('#valve_'+(j+1)).css('background-color','red');
