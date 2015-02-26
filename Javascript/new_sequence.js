@@ -18,13 +18,9 @@ $(document).ready(function(){
 
 	$(document).on("click","#submit", function() {
 		if ($("#sequence_name").val()) {
-			alert('thanks');
-		} else {
-			alert('oops');
-		}
-		var sequence_name = $("#sequence_name").val();
-		var num_rows = $( "tr:last" ).data('count');
-		var object_to_post = create_sequence_object(num_rows);
+			var sequence_name = $("#sequence_name").val();
+			var num_rows = $( "tr:last" ).data('count');
+			var object_to_post = create_sequence_object(num_rows);
 		//swal('Submitted!', 'Now sit back and watch your creation in action!', 'success');
 		// $.post('/Controller/sequence_manager.php',{
 		// 	sequence_post: object_to_post
@@ -33,14 +29,21 @@ $(document).ready(function(){
 		// 		console.log("posted. here's the data returned: "+data);
 		// 	});
 
-	$.ajax
-	({
-		type: "POST",
-		dataType : 'json',
-		url: '/Controller/save_sequence_to_file.php',
-		data: { data: JSON.stringify(object_to_post), file_name: sequence_name },
-		success: function () {window.location.href = "/"; }
-	});
+			$.ajax
+			({
+				type: "POST",
+				dataType : 'json',
+				url: '/Controller/save_sequence_to_file.php',
+				data: { data: JSON.stringify(object_to_post), file_name: sequence_name },
+				success: function () {
+					swal('Good', 'Good things', 'success');
+					window.location.href = "/"; },
+				error: function() {swal("Crap", "Something Bad Happened", "error");}
+			});
+		} else {
+			swal('Hey!', 'Please name your sequence', 'error');
+		}
+
 		//post the object to /Controller/sequence_manager.php
 	});
 
