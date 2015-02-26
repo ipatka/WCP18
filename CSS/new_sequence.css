@@ -58,3 +58,15 @@ padding: auto;
 	text-align: center;
 }
 
+.submit_section{
+	margin-top: 20px;
+}
+
+.sequence_name_input{
+	width: 250px;
+	height: 40px;
+	font-size: 18px;
+	margin-right: 20px;
+	border-radius: 3px;
+	padding-left: 4px;
+}

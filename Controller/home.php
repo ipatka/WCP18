@@ -14,17 +14,26 @@ class Controller_Home extends Controller_Base {
     
         $data["name"] = "Isaac"; 
         $number_of_fields = 3;
+        $dir = '../Sequences/';
+        $files = array_slice(scandir($dir), 2);
+        $extensions = array("json");
 
+$j = 0;
+foreach ($files as &$filename) {
 
+        $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
+        if (in_array($ext, $extensions)) {
+            # code...
+        $filename = basename($dir.$filename, '.json');
+        $fileid = $filename;
+        $filename = str_replace('_', ' ', $filename);
+        $data["sequence_option"][$j]["sequence_name"] = $filename;
+        $data["sequence_option"][$j]["sequence_id"] = $fileid;
+        $j++;
+        } 
+        
+};
 
-        for ($i=0; $i < 10; $i++) { 
-    		
-        	// Array for mustache to render
-    	    $data["sequence_option"][$i]["sequence_name"] = "sequence ".($i+1);
-            $data["sequence_option"][$i]["sequence_id"] = "id".($i+1);
-
-	    
-        }
 
 
 

@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
-		$.post('../Controller/database_test.php',{get_names: 'test'}).done(function(data) {
-			var returned = jQuery.parseJSON(data);
-			console.log(returned);
-		});
+
 
 
 		var sequence_selected = false;
@@ -42,9 +39,12 @@ $(document).ready(function(){
 
 		});
 
-		$("#add_to_queue").click(function() {
-			swal("Warning!", "Select a valid sequence!", "warning")	
-			//post to /Controller/sequence_manager the id of the sequence
+		$(document).on('click','#add_to_queue',function() {
+			// var sequence_name = $('.selected');
+			console.log(selected_sequence);
+			$.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
+				console.log('returned '+data);
+			});
 		});
 
 

@@ -21,22 +21,32 @@ class Controller_Sequence_Manager extends Controller_Base {
 
     public function route() {
         
-        // 2 main functions
-        // 1. receives the $sequence_array, parse, put in database
-        // 2. receives the name of a sequence, queries the database, 
-        //      retrieves the sequence data, and executes ()
+        if ($_POST['execute_from_home']) {
+            $sequence_name = $_POST['execute_from_home'].'.json';
+            $file = "../Sequences/".$sequence_name;
+            $sequence_array = json_decode(file_get_contents($file));
+            echo json_encode($sequence_array);
+        }
+        if ($_POST['sequence_post']) {
+            $sequence_array = $_POST["sequence_post"];
+        }
 
+        if ($_POST['preview_home']) {
+            $sequence_array_handle = $_POST['preview_home'].'.json';
+            $file = "../Sequences/".$sequence_name;
+            $sequence_array = json_decode(file_get_contents($file));
+            echo json_encode($sequence_array);
+        }
 
 	    $interpret = array(4 , 17 , 27 , 22 , 18 , 23 , 24 , 25);
-        $sequence_array = $_POST["sequence_post"];
+        
         $frame = 1;
-        // need to put sequence data into the database instead of just printing
         foreach ($sequence_array as $key => $value) {
             $entry = 1;
             $pin_open_counter = 0;
             $pin_close_counter = 0;
-           // echo json_encode("frame");
-           // echo json_encode($frame);
+           echo json_encode("frame");
+           echo json_encode($frame);
             foreach ($value as $sub_array => $value_b) {
                 if ($entry < 9) {
                     if ($value_b == 1) {
@@ -46,12 +56,12 @@ class Controller_Sequence_Manager extends Controller_Base {
                         $pins_close[$pin_close_counter] = $interpret[$entry-1];
 			$pin_close_counter++;
                     }
-                   // echo json_encode("nozzle"), json_encode($entry);
-                   // echo json_encode("state"), json_encode($value_b);
+                   echo json_encode("nozzle"), json_encode($entry);
+                   echo json_encode("state"), json_encode($value_b);
 
                 }
                 else {
-                   // echo json_encode("frame_length"), json_encode((int)$value_b);
+                   echo json_encode("frame_length"), json_encode((int)$value_b);
                     $frame_length = $value_b;
 		
                 }
@@ -62,8 +72,7 @@ class Controller_Sequence_Manager extends Controller_Base {
 
             // $pins_open[0] = 17;
             // $pins_open[1] = 27;
-		echo json_encode('pins open'), json_encode($pins_open);
-		echo json_encode('pins close'), json_encode($pins_close);
+
 		  exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins_open) . '" "' . serialize($pins_close) . '" "' . addslashes($frame_length) . '"');
             unset($pins_open);
             unset($pins_close);

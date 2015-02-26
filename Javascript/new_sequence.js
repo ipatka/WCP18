@@ -17,15 +17,30 @@ $(document).ready(function(){
 
 
 	$(document).on("click","#submit", function() {
-		var num_rows = $( "tr:last" ).data('count');
-		var object_to_post = create_sequence_object(num_rows);
-		swal('Submitted!', 'Now sit back and watch your creation in action!', 'success');
-		$.post('/Controller/sequence_manager.php',{
-			sequence_post: object_to_post
-		},
-		function(data) {
-				console.log("posted. here's the data returned: "+data);
-			});
+		if ($("#sequence_name").val()) {
+				var sequence_name = $("#sequence_name").val();
+				var num_rows = $( "tr:last" ).data('count');
+				var object_to_post = create_sequence_object(num_rows);
+				//swal('Submitted!', 'Now sit back and watch your creation in action!', 'success');
+				// $.post('/Controller/sequence_manager.php',{
+				// 	sequence_post: object_to_post
+				// },
+				// function(data) {
+				// 		console.log("posted. here's the data returned: "+data);
+				// 	});
+
+			$.ajax
+			({
+				type: "POST",
+				dataType : 'json',
+				url: '/Controller/save_sequence_to_file.php',
+				data: { data: JSON.stringify(object_to_post), file_name: sequence_name },
+				success: function () {window.location.href = "/"; }
+			});			
+		} else {
+			swal('Hey!', 'Enter a name for your sequence', 'error');
+		}
+
 		//post the object to /Controller/sequence_manager.php
 	});
 
@@ -34,8 +49,11 @@ $(document).ready(function(){
 		$('.preview_content').show();
 		var num_rows = $( "tr:last" ).data('count');
 		var object_to_preview = create_sequence_object(num_rows);
+		console.log(object_to_preview);
 		preview_sequence(object_to_preview);
 	});
+
+
 
 
 
@@ -93,7 +111,13 @@ function createArray(length) {
 
 
 function getNextRow() {
-	var template = $('<tr class="row"> <td class="row_label body"></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td class="row_label"> <select class="frame_length"> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="0">X</option> </select> </td></tr>');
+	//var template = $('<tr class="row"> <td class="row_label body"></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td> <div class="valve_button"></div></td><td class="row_label"> <select class="frame_length"> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="0">X</option> </select> </td></tr>');
+	var template = $('tr:last').clone();
+	$(template.find('.valve_button')).each(function() {
+		if ($(this).hasClass('valve_selected')) {
+			$(this).removeClass('valve_selected');
+		}
+	})
 	var rows = $( "tr:last" ).data('count');
 	var next_row_number = rows + 1;
 
@@ -102,7 +126,7 @@ function getNextRow() {
 	return template;
 }
 
-var move_on;
+
 function preview_sequence(sequence) {
 	var num_rows = $( "tr:last" ).data('count');
 	console.log('num rows '+num_rows);
@@ -151,6 +175,9 @@ function clear_frame(frame) {
 	}
 
 }
+
+
+
 
 
 });//done ready
