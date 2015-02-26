@@ -21,13 +21,13 @@ $(document).ready(function(){
 			var sequence_name = $("#sequence_name").val();
 			var num_rows = $( "tr:last" ).data('count');
 			var object_to_post = create_sequence_object(num_rows);
-		swal('Submitted!', 'Now sit back and watch your creation in action!', 'success');
-		$.post('/Controller/sequence_manager.php',{
-		 	sequence_post: object_to_post
-		 },
-		 function(data) {
-		 		console.log("posted. here's the data returned: "+data);
-		 	});
+		// swal('Submitted!', 'Now sit back and watch your creation in action!', 'success');
+		// $.post('/Controller/sequence_manager.php',{
+		//  	sequence_post: object_to_post
+		//  },
+		//  function(data) {
+		//  		console.log("posted. here's the data returned: "+data);
+		//  	});
 
 			$.post('/Controller/save_sequence_to_file.php', { data: JSON.stringify(object_to_post), file_name: sequence_name }).done(function() {
 				window.location.href = "/";
