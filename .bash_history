@@ -1,100 +1,3 @@
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 1
-sudo ./myBlinker 17 27 5
-php blinkerTest.php
-php blinkerTest.php
-php blinkerTest.php
-php blinkerTest.php
-ls
-cd ..
-ls
-cd ..
-ls
-cd Controller/
-ls
-cd php-blinker/
-ls
-sudo ./myBlinker 17 2
-ls
-cd ..
-s
-ls
-php blinkerTest.php 
-php blinkerTest.php 
-ls
-cd ..
-ls
-php blinkerTest.php 
-ls
-cd Controller/
-ls
-php blinkerTest.php 
-sudo visudo
-cd ..
-ls
-git add .
-git commit -m 'refresh makes blink"
-'
-git pull origin master
-git push origin master
-git push origin master
-git add .
-git commit -m "
-submit button blinks leds"
-git push origin master
-git add .
-git commit -m "working on frame length"
-git push origin master
-shutdown -h now
-sudo shutdown -h now
-sudo apt-get install phpmyadmin
-nano /etc/apache2/apache2.conf
-sudo nano /etc/apache2/apache2.conf
-/etc/init.d/apache2 restart
-sudo nano /etc/apache2/apache2.conf
-ls /etc/phpmyadmin
-sudo nano /etc/apache2/apache2.conf
-sudo /etc/init.d/apache2 restart
-startx
-gpio mode 2 out
-gpio write 2 1
-gpio write 2 0
-php blinkerTest.php
-ls
-cd Desktop/
-ls
-cd php-blinker/
-ls
-php blinkerTest.php
-cd
-ls
-ccd ..
-ls
-cd ..
-ls
-cd WCP18/
-ls
-cd external_libraries/php-blinker/
-ls
-sudo nano blinkerTest.php 
-cd ..
-ls
-cd ..
-ls
-git pull origin master
-gs
-git pull origin master
-git pull origin master
-cd /etc/network
-ls
-sudo nano interfaces
-sudo nano interfaces
-cd ..
-ls
-cd wpa_supplicant/
-ls
 sudo nano wpa_supplicant
 sudo nano wpa_supplicant.conf
 ls
@@ -497,4 +400,101 @@ git commit -m "database connection issues"
 git pull origin master
 git push origin master
 git pull origin master
+exit
+git pull origin master
+gs
+git pull origin master
+ls
+cd Javascript/ls
+cd Javascript/
+ls
+nano new_sequence.js 
+nano new_sequence.js 
+cd ..
+git add .
+git commit -m "changed ajax"
+git status
+git pull origin master
+git pull origin master
+nano Javascript/new_sequence.js 
+ls
+cd Sequences/
+ls
+rm aaaaaaaa.json 
+cd ..
+ls
+ls Sequences/
+nano Javascript/new_sequence.js 
+cd Controller/
+ls
+nano save_sequence_to_file.php 
+nano Javascript/new_sequence.js 
+cd ..
+ls
+nano Javascript/new_sequence.js 
+nano Controller/save_sequence_to_file.php
+cd Sequences/
+ls
+nano new
+ls
+rm new.json 
+ls
+cd ..
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+sudo visudo
+nano Controller/save_sequence_to_file.php 
+ls Sequences/
+nano Controller/save_sequence_to_file.php 
+ls
+chmod -R www-data
+cd .
+cd ..
+ls
+cd ..
+cd ..
+cd ..
+s
+ls
+cd home/wcp18/WCP18/
+ls
+sudo usermod -a -G www-data wcp18
+sudo chgrp -R www-data /home/wcp18/WCP18
+sudo chmod -R g+w /home/wcp18/WCP18
+git log
+git status
+git checkout .
+git status
+git add .
+git commit -m "db works on pi"
+git pull origin master
+git push origin master
+nano Javascript/new_sequence.js 
+nano Controller/save_sequence_to_file.php 
+git pull origin master
+ls
+cd Sequences/
+ls
+rm aaaaaaaa.json 
+rm A_Name.json 
+rm bababa.json 
+rm cccccc.json 
+rm dadadad.json 
+ls
+ls
+sudo rm dadadad.json 
+ls
+rm will_it_work.json 
+ls
+rm test.json 
+rm new.json 
+ls
 exit
