@@ -1,99 +1,3 @@
-git push origin master
-ls
-cd external_libraries/
-ls
-cd php-blinker/
-ls
-sudo nano blinker
-cd ..
-cd ..
-git pull origin master
-sudo visudo
-sudo visudo
-sudo nano blinkerTest
-ls
-cd external_libraries/php-blinker/
-ls
-sudo nano blinkerTest.php 
-php blinkerTest.php 
-sudo nano blinkerTest.php 
-sudo nano blinkerTest.php 
-php blinkerTest.php 
-cd /
-ls
-cd /home/wcp18/WCP18/
-git pull origin master
-php blinkerTest.php 
-cd external_libraries/php-blinker/
-php blinkerTest.php 
-php -l blinker
-sudo nano blinker
-sudo nano blinker
-sudo nano blinker
-php -l blinker
-php blinkerTest.php 
-sudo nano blinkerTest.php 
-php blinkerTest.php 
-php blinkerTest.php 
-sudo nano blinker
-php blinkerTest.php 
-ls
-sudo nano src/PhpGpio/Gpio.php
-php blinkerTest.php 
-sudo nano src/PhpGpio/Gpio.php
-ls
-sudo nano blinker
-php blinkerTest.php
-sudo nano blinker
-sudo nano blinker
-php blinkerTest.php
-sudo nano blinker
-php blinkerTest.php
-cd /usr
-cd /bin
-cd /php
-ls
-cd ..
-ls
-cd /bin
-l
-ls
-cd env
-cd ~
-ls
-cd Desktop/
-ls
-cd php-blinker/
-ls
-chmod 0755 /path/to/script.php
-chmod 0755 myBlinker
-./myBlinker
-sudo ./myBlinker
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17 27
-sudo ./myBlinker 17 27 200000
-sudo ./myBlinker 17 27 200000
-sudo ./myBlinker 17 27
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
 sudo ./myBlinker 17 27 4
 sudo ./myBlinker 17 27 4
 sudo ./myBlinker 17 27 4
@@ -497,4 +401,100 @@ ls
 cd external_libraries/php-blinker/
 nano myBlinker 
 nano myBlinker 
+exit
+git pull origin master
+cd Controller/
+ls
+nano database_test.php 
+nano Base.php 
+nano Base.php 
+nano database_test.php 
+nano Base.php 
+nano Base.php 
+nano Base.php 
+nano Base.php 
+nano database_test.php 
+nano database_test.php 
+nano database_test.php 
+nano database_test.php 
+nano database_test.php 
+nano Base.php 
+nano Base.php 
+nano Base.php 
+nano Base.php 
+nano database_test.php 
+nano database_test.php 
+git log
+git reset --hard 6bdf442e2a249aaebc788ac8a0bd58b040f60428
+ls
+cd ..
+ls
+git status
+go 6bdf442e2a249aaebc788ac8a0bd58b040f60428
+git checkout 6bdf442e2a249aaebc788ac8a0bd58b040f60428
+git reset --hard 6bdf442e2a249aaebc788ac8a0bd58b040f60428
+git status
+ls
+cd Controller/
+ls
+cd ..
+git pull origin master
+git status
+git log
+git status
+go head
+git checkout head
+git log
+git checkout 08b408769bf273947eb3be926a62ff5ef79e7308
+git status
+git checkout master
+git status
+git log
+git status
+git checkout 08b408769bf273947eb3be926a62ff5ef79e7308
+git checkout master
+git reset --hard 08b408769bf273947eb3be926a62ff5ef79e7308
+git status
+git push origin master
+git status
+ls
+cd Controller/
+ls
+nano database_test.php 
+nano Base.php 
+cd ..
+nano db.php 
+nano db.php 
+nano db.php 
+cd Controller/
+ls
+cd ..
+nano db.php 
+nano db.php 
+nano db.php 
+cd Controller/
+ls
+nano database_test.php 
+nano Base.php 
+nano Base.php 
+php -l Base.php 
+php -l database_test.php 
+ls
+nano database_test.php 
+nano Base.php 
+nano Base.php 
+nano database_test.php 
+nano database_test.php 
+cd ..
+ls
+nano db.php 
+nano db.php 
+cd Controller/
+nano Base.php 
+nano Base.php 
+git add .
+git commit -m "database connection issues"
+git pull origin master
+git push origin master
+git pull origin master
 exit
