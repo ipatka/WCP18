@@ -29,17 +29,21 @@ $(document).ready(function(){
 		// 		console.log("posted. here's the data returned: "+data);
 		// 	});
 
-			$.ajax
-			({
-				type: "POST",
-				dataType : 'json',
-				url: '/Controller/save_sequence_to_file.php',
-				data: { data: JSON.stringify(object_to_post), file_name: sequence_name },
-				success: function () {
-					swal('Good', 'Good things', 'success');
-					window.location.href = "/"; },
-				error: function() {swal("Crap", "Something Bad Happened", "error");}
+			$.post('/Controller/save_sequence_to_file.php', { data: JSON.stringify(object_to_post), file_name: sequence_name }).done(function() {
+				window.location.href = "/";
 			});
+
+			// $.ajax
+			// ({
+			// 	type: "POST",
+			// 	dataType : 'json',
+			// 	url: '/Controller/save_sequence_to_file.php',
+			// 	data: { data: JSON.stringify(object_to_post), file_name: sequence_name },
+			// 	success: function () {
+			// 		swal('Good', 'Good things', 'success');
+			// 		window.location.href = "/"; },
+			// 	error: function() {swal("Crap", "Something Bad Happened", "error");}
+			// });
 		} else {
 			swal('Hey!', 'Please name your sequence', 'error');
 		}
