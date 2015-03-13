@@ -1,199 +1,3 @@
-sudo nano wpa_supplicant
-sudo nano wpa_supplicant.conf
-ls
-sudo nano wpa_supplicant.conf
-cd ..
-sudo reboot
-startx
-sudo nano /etc/network/interfaces
-sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-sudo nano /etc/network/interfaces
-sudo reboot
-sudo nano /etc/network/interfaces
-sudo nano /etc/network/interfaces
-startx
-sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-sudo ifup wlan0
-lsusb
-sudo ifup wlan9
-sudo ifup wlan0
-sudo nano /etc/network/interfaces
-sudo ifup wlan0
-ifconfig
-sudo reboot
-startx
-sudo shutdown -h now
-ls
-cd ..
-ls
-mkdir email_ip
-ls
-cd email_ip/
-nano startup_mailer.py
-sudo chmod +x startup_mailer.py
-sudo nano /boot/boot.rc
-cd /boot/
-ls
-sudo nano .bashrc
-cd ~
-ls
-cd ..
-ls
-cd email_ip/
-nano launcher.sh
-nano startup_mailer.py 
-py startup_mailer.py 
-python startup_mailer.py 
-sudo nano /etc/rc.local 
-sudo nano /etc/rc.local 
-sudo reboot
-shutdown
-sudo shutdown -h now
-ls
-cd ..
-ls
-sudo su
-exit
-tzselect
-exit
-exit
-ls
-gs
-git status
-git add .
-git commit -m "removed irrelevent files"
-git pull origin master
-git push origin master
-git pull origin master
-git pull origin master
-git pull origin master
-git history
-git log
-git reset --hard 8939203
-git pull origin master
-gs
-git status
-git push origin master
-git status
-git log
-git pull origin master
-ls
-cd external_libraries/
-sl
-ls
-cd php-blinker/
-ls
-nano myBlinker 
-nano myBlinker 
-ls
-sudo ./myBlinker
-nano myBlinker 
-cd ..
-ls
-cd ..
-git add .
-git commit -m "works with array. now modify to accept arguments"
-git pull origin master
-git push origin master
-git pull origin master
-nano myBlinker 
-cd external_libraries/php-blinker/
-nano myBlinker 
-cd ..
-cd ..
-cd Controller/
-nano sequence_manager.php 
-cd ../external_libraries/php-blinker/
-./myBlinker 
-sudo ./myBlinker 
-./myBlinker 
-nano myBlinker 
-nano myBlinker 
-nano myBlinker 
-cd ..
-cd ..
-git add .
-git commit -m "works with array .not with arguments. must serialize array"
-git push origin master
-ls
-cd Controller/
-nano sequence_manager.php 
-cd ../external_libraries/php-blinker/
-nano myBlinker 
-php -l myBlinker 
-cd ../../Controller/
-php -l sequence_manager.php 
-cd ..
-cd Controller/
-ls
-nano sequence_manager.php 
-nano sequence_manager.php 
-cd ..
-git add .
-git commit -m "passing array of pins works"
-git push origin master
-git pull origin master
-git pull origin master
-git pull origin master
-cd Controller/
-ls
-nano sequence_manager.php 
-nano new_sequence.php 
-nano new_sequence.php 
-nano new_sequence.php 
-git add .
-git commit -m "added multiple frames"
-git push origin master
-git push origin master
-nano new_sequence.php 
-cd ..
-ls
-git pull origin master
-git pull origin master
-ls
-cd Controller/
-ls
-nano sequence_manager.php 
-cd ..
-ls
-git add .
-git commit -m "pins clear successfully"
-git push origin master
-git status
-git pull origin master
-sudo visudo
-sudo visudo
-cd ..
-ls
-cd WCP18/
-ls
-cd external_libraries/php-blinker/
-ls
-chmod("gpio_initialize", 0755)
-chmod("/home/wcp18/WCP18/external_libraries/php-gpio/gpio_initialize", 0755)
-chmod("/home/wcp18/WCP18/external_libraries/php-gpio/gpio_initialize", 0755)
-chmod("/home/wcp18/WCP18/external_libraries/php-gpio/gpio_initialize", 0755);
-sudo chmod("/home/wcp18/WCP18/external_libraries/php-gpio/gpio_initialize", 0755)
-chmod 755 /home/wcp18/WCP18/external_libraries/php-gpio/gpio_initialize
-cd /home/wcp18/WCP18/external_libraries/php-gpio
-chmod 755 /home/wcp18/WCP18/external_libraries/php-blinker/gpio_initialize
-chmod 755 /home/wcp18/WCP18/external_libraries/php-blinker/gpio_done
-gs
-git status
-ls
-sudo ./gpio_done 
-nano gpio_initialize 
-sudo ./gpio_initialize 
-sudo ./gpio_done 
-php -l gpio_done 
-php -l gpio_initialize 
-nano myBlinker 
-cd /con
-cd ..
-ls
-cd ..
-ls
-cd Controller/
 ls
 nano sequence_manager.php 
 nano sequence_manager.php 
@@ -498,3 +302,199 @@ rm test.json
 rm new.json 
 ls
 exit
+nano Javascript/home.js 
+nano Javascript/home.js 
+nano Javascript/home.js 
+nano Javascript/home.js 
+nano Javascript/home.js 
+ls
+mkdir Queue
+ls
+gs
+git status
+git add .
+gs
+git status
+git rm Sequences/A_Name.json
+git rm Sequences/aaaaaaa.json
+git rm Sequences/aaaaaaaa.json
+gs
+git status
+git commit -m "unselect sequence on add to queue"
+git pull origin master
+git push origin master
+exit
+cd Javascript/
+ls
+ls
+cd Sequences/
+ls
+rm D\!ckbutt.json 
+rm Dancing_Monkey.json 
+rm fast_and_long.json 
+exit
+shutdown -h now
+sudo shutdown -h now
+exit
+sudo shutdown -h now
+sudo shutdown -h now
+suo raspi-config
+sudo raspi-config
+wget http://sourceforge.net/code-snapshots/svn/m/mj/mjpg-streamer/code/mjpg-streamer-code-182.zip
+wget http://sourceforge.net/code-snapshots/svn/m/mj/mjpg-streamer/code/mjpg-streamer-code-182.zip
+ls
+cd ..
+ls
+cd WCP18/
+mv mjpg-streamer-code-182.zip ..
+ls
+cd ..
+ls
+unzip mjpg-streamer-code-182.zip 
+cd mjpg-streamer-code-182/mjpg-streamer
+ls
+make mjpg_streamer input_file.so output_http.so
+sudo cp mjpg_streamer /usr/local/bin
+sudo cp output_http.so input_file.so /usr/local/lib/
+ls
+sudo cp -R www /usr/local/www
+cd ..
+cd ..
+cd ~
+ls
+cd ..
+ls
+ mkdir /tmp/stream
+raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+exit
+raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+ls
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd ..
+cd ~
+ls
+ls
+cd Templates/
+ls
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+sudo shutdown -h now
+sudo apt-get install libjpeg8-dev imagemagick libv4l-dev
+sudo ln -s /usr/include/linux/videodev2.h /usr/include/linux/videodev.h
+wget http://sourceforge.net/code-snapshots/svn/m/mj/mjpg-streamer/code/mjpg-streamer-code-182.zip
+ls
+cd ..
+ls
+cd mjpg-streamer-code-182/
+ls
+cd /usr/
+ls
+cd local/
+ls
+cd lib/
+ls
+cd ..
+cd ..
+cd ~
+ls
+cd ..
+ls
+cd mjpg-streamer-code-182/
+ls
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+startx
+cd /usr/
+ls
+cd local/
+ls
+cd www/
+ls
+nano javascript_simple.html 
+ls
+cd ..
+ls
+mkdir /tmp/stream
+raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+exit
+ls
+cd ..
+cd /usr/local/www/
+ls
+nano javascript_simple.html 
+cat javascript_simple.html 
+ls
+nano fountain_stream.html
+nano fountain_stream.html
+sudo nano fountain_stream.html
+ls
+cd ~
+ls
+nano Templates/home.mustache
+nano Javascript/home.js 
+nano Javascript/home.js 
+nano Javascript/home.js 
+ls
+nano Templates/home.mustache
+cd /usr/local/www/
+sudo nano fountain_stream.html 
+exit
+ls
+cd ..
+ls
+cd mjpg-streamer-code-182/
+ls
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd ~
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd /etc/
+ls
+sudo nano rc.local
+sudo nano rc.local
+sudo nano rc.local
+ls
+sudo reboot -h now
+sudo reboot
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd ..
+ls
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+sudo LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd /usr/local/
+ls
+cd www/
+ls
+cd ~
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+cd ..
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd mjpg-streamer-code-182/
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd /etc/
+ls
+sudo nano rc.local
+cd ~
+mkdir /tmp/stream
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+xit
+eix
+texit
+sudo reboot
+mkdir /tmp/stream
+raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &

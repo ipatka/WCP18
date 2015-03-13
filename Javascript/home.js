@@ -1,7 +1,11 @@
 $(document).ready(function(){
-
-
-
+		
+		
+		//var ip = InetAddress.getLocalHost();
+		console.log(window.location.hostname);
+		//console.log(window.location.host);
+		var ip = window.location.hostname;
+		$('#live_feed').attr('href','http://'+ip+':8080/fountain_stream.html');
 
 		var sequence_selected = false;
 		var selected_sequence;
@@ -50,9 +54,9 @@ $(document).ready(function(){
 		});
 
 
-		$("#live_feed").click(function(){
-			swal("Webcam Disconnected","Please reconnect the webcam","warning")
-		})
+		//$("#live_feed").click(function(){
+		//	swal("Webcam Disconnected","Please reconnect the webcam","warning")
+		//})
 
 		$("#BU_logo").click(function(){
 			swal({   title: "You clicked a kitty!",   text: "Here's Vivan.",   imageUrl: "../Images/Vivian.jpg" });

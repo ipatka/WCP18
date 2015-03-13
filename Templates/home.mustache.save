@@ -54,7 +54,7 @@
 
 		<div id="queue">
 
-			<a class="button" target="_blank" id="live_feed">Live Feed</a>
+			<div class="button" id="live_feed">Live Feed</div>
 
 			<div class="sub_header" id="queue_text">
 				Queue
@@ -99,7 +99,8 @@
 		</div>
 	</div>
 
-		
+
+	
 
 	<div id="footer">
 		<div id="school_logo">
