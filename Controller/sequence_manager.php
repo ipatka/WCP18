@@ -32,10 +32,11 @@ class Controller_Sequence_Manager extends Controller_Base {
         }
 
         if ($_POST['preview_home']) {
-            $sequence_array_handle = $_POST['preview_home'].'.json';
-            $file = "../Sequences/".$sequence_name;
-            $sequence_array = json_decode(file_get_contents($file));
-            echo json_encode($sequence_array);
+            $file_name = str_replace(' ', '_', $_POST['preview_home']);
+            $sequence_array_handle = $file_name.'.json';
+            $file = "../Sequences/".$sequence_array_handle;
+            $sequence_preview = file_get_contents($file);
+            echo json_encode($sequence_preview);
         }
 
 	    $interpret = array(4 , 17 , 27 , 22 , 18 , 23 , 24 , 25);

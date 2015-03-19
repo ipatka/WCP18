@@ -53,11 +53,11 @@ $(document).ready(function(){
 		})
 
 		$("#BU_logo").click(function(){
-			swal({   title: "You clicked a kitty!",   text: "Here's Vivan.",   imageUrl: "../Images/Vivian.jpg" });
+			//swal({   title: "You clicked a kitty!",   text: "Here's Vivan.",   imageUrl: "../Images/Vivian.jpg" });
 		})
 
 		$("#team_info").click(function(){
-			swal({   title: "Who are we?",   text: "WCP18!",   imageUrl: "../Images/wcp18_team.png" });
+			//swal({   title: "Who are we?",   text: "WCP18!",   imageUrl: "../Images/wcp18_team.png" });
 		})
 
 
