@@ -9,16 +9,12 @@
   <link rel="stylesheet" type="text/css" href="../CSS/new_sequence.css">
   <link rel="stylesheet" type="text/css" href="../CSS/sequence_preview.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript" src="../Javascript/sequence_preview.js"></script>
   <script type="text/javascript" src="../Javascript/home.js"></script>
 	<script type="text/javascript" src="../Javascript/new_sequence.js"></script>
 
   <script type="text/javascript" src="../external_libraries/sweetalert-master/lib/sweet-alert.js"></script>
 
    <link rel="stylesheet" type="text/css" href="../external_libraries/sweetalert-master/lib/sweet-alert.css">
-
-  	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
 </head>
 
@@ -58,7 +54,7 @@
 
 		<div id="queue">
 
-			<a class="button" target="_blank" id="live_feed">Live Feed</a>
+			<div class="button" id="live_feed">Live Feed</div>
 
 			<div class="sub_header" id="queue_text">
 				Queue
@@ -103,7 +99,8 @@
 		</div>
 	</div>
 
-		
+
+	
 
 	<div id="footer">
 		<div id="school_logo">

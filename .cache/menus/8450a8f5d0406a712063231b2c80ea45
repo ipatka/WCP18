@@ -174,6 +174,16 @@ Graphics applications
 applications-graphics
 lxde-graphics.directory
 2
+-display.im6.desktop
+ImageMagick (display)
+Display and edit image files
+display.im6
+
+8
+ImageMagick (display)
+/usr/bin/display.im6 %f
+0
+0
 -xpdf.desktop
 xpdf
 View PDF files
@@ -386,6 +396,16 @@ X-Debian-Applications-Programming-idle_(python_v3.2).desktop
 10
 IDLE (Python v3.2)
 /usr/bin/idle-python3.2
+0
+0
+-menu-xdg-X-Debian-Applications-Graphics-imagemagick.desktop
+ImageMagick
+
+/usr/share/pixmaps/display.im6.xpm
+X-Debian-Applications-Graphics-imagemagick.desktop
+10
+ImageMagick
+/usr/bin/display.im6 logo:
 0
 0
 -menu-xdg-X-Debian-Help-info.desktop
