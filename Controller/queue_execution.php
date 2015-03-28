@@ -28,9 +28,7 @@ while(1) {
 	    $sequence_array = json_decode(file_get_contents($file_in_sequence));
 	    execute_sequence($sequence_array);
 	    $loop = file_get_contents($file_in_queue);
-	    if ($loop == 'false') {
-	    	unlink($file_in_queue);
-	    }
+	    unlink($file_in_queue);
     } else {
     	echo json_encode('nothing exists');
     }
