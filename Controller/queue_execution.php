@@ -20,16 +20,21 @@ while(1) {
         } 
     
     };
-
-    $sequence_name = $queue[0].'.json';
-    $file_in_sequence = "../Sequences/".$sequence_name;
-    $file_in_queue = "../Queue/".$sequence_name;
-    $sequence_array = json_decode(file_get_contents($file_in_sequence));
-    execute_sequence($sequence_array);
-    $loop = file_get_contents($file_in_queue);
-    if ($loop == 'false') {
-    	unlink($file_in_queue);
+    if ($queue[0]) {
+    	echo json_encode('queue exists');
+	    $sequence_name = $queue[0].'.json';
+	    $file_in_sequence = "../Sequences/".$sequence_name;
+	    $file_in_queue = "../Queue/".$sequence_name;
+	    $sequence_array = json_decode(file_get_contents($file_in_sequence));
+	    execute_sequence($sequence_array);
+	    $loop = file_get_contents($file_in_queue);
+	    if ($loop == 'false') {
+	    	unlink($file_in_queue);
+	    }
+    } else {
+    	echo json_encode('nothing exists');
     }
+
     
     // if loop, don't remove from queue
     // else, remove from queue
