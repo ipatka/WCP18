@@ -21,8 +21,6 @@ class Controller_Save_Sequence extends Controller_Base {
 
     }
 
-
-
 }
 
 $save = new Controller_Save_Sequence();

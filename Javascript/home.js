@@ -48,8 +48,15 @@ $(document).ready(function(){
 			console.log(selected_sequence);
 			$('#'+selected_sequence).removeClass('selected');
 			//swal('Success!', 'Now sit back and watch your creation in action', 'Success');			
-			$.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
-				//console.log('returned '+data);
+			// $.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
+			// 	//console.log('returned '+data);
+			// });
+
+			$.post('../Controller/sequence_manager.php', {
+				add_to_queue: selected_sequence,
+				loop: 'false'
+			}).done(function(data) {
+				console.log('returned '+data);
 			});
 		});
 
@@ -59,11 +66,11 @@ $(document).ready(function(){
 		//})
 
 		$("#BU_logo").click(function(){
-			swal({   title: "You clicked a kitty!",   text: "Here's Vivan.",   imageUrl: "../Images/Vivian.jpg" });
+			//swal({   title: "You clicked a kitty!",   text: "Here's Vivan.",   imageUrl: "../Images/Vivian.jpg" });
 		})
 
 		$("#team_info").click(function(){
-			swal({   title: "Who are we?",   text: "WCP18!",   imageUrl: "../Images/wcp18_team.png" });
+			//swal({   title: "Who are we?",   text: "WCP18!",   imageUrl: "../Images/wcp18_team.png" });
 		})
 
 

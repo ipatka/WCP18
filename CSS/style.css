@@ -84,3 +84,9 @@ float: left;
 	text-align: center;
 
 }
+
+.empty_text{
+	color: gray;
+	text-align: center;
+	padding-top: 15px;
+}

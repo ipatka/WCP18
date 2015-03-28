@@ -135,11 +135,13 @@ function getNextRow() {
 
 
 function preview_sequence(sequence) {
+	console.log('sequence'+sequence);
 	var num_rows = $( "tr:last" ).data('count');
 	console.log('num rows '+num_rows);
 
    var i = 0;
    var delay_time = sequence[i][8];
+   console.log('sequence i'+sequence[i]);
    animate_frame(sequence[i]);
    i++;
    next();
