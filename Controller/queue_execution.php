@@ -1,14 +1,13 @@
 <?php
 
 while(1) {
-
+	unset($queue);
     $dir = '../Queue/';
     $files = array_slice(scandir($dir), 2);
-    $extensions = array("json");
+	$extensions = array("json");
 
     $j = 0;
     foreach ($files as &$filename) {
-
         $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
         if (in_array($ext, $extensions)) {
 
@@ -16,19 +15,22 @@ while(1) {
             # code...
         $filename = basename($dir.$filename, '.json');
         $queue[$j] = $filename;
+	echo json_encode($filename);
         $j++;
         } 
     
     };
+	//echo json_encode($queue[0]);
     if ($queue[0]) {
     	echo json_encode('queue exists');
+	echo json_encode('sequence name '.$queue[0]);
 	    $sequence_name = $queue[0].'.json';
 	    $file_in_sequence = "../Sequences/".$sequence_name;
 	    $file_in_queue = "../Queue/".$sequence_name;
 	    $sequence_array = json_decode(file_get_contents($file_in_sequence));
 	    execute_sequence($sequence_array);
 	    $loop = file_get_contents($file_in_queue);
-	    unlink($file_in_queue);
+	    echo json_encode(unlink($file_in_queue));
     } else {
     	echo json_encode('nothing exists');
     }
