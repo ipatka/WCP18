@@ -13,12 +13,14 @@ $(document).on('click', '#preview_home', function() {
 });
 
 function preview_sequence(sequence) {
-	console.log('length '+sequence.length);
-	var num_rows = $( "tr:last" ).data('count');
+	console.log('sequence'+sequence);
+	var num_rows;// = $( "tr:last" ).data('count');
 	console.log('num rows '+num_rows);
+	num_rows = 8;
 
    var i = 0;
    var delay_time = sequence[i][8];
+   console.log('sequence i'+sequence[i]);
    animate_frame(sequence[i]);
    i++;
    next();

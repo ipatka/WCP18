@@ -65,10 +65,17 @@
 			</div>
 
 			<div id="queue_box">
-				<div class="queue_inner_text body">Sequence
+<!-- 				<div class="queue_inner_text body">Sequence
 				</div>
 				<div class="queue_inner_text body">Time remaining
-				</div>
+				</div> -->
+
+				{{#queue}}
+					<div id="{{sequence_id}}" class="queue_sequence">{{sequence_name}}</div>
+				{{/queue}}
+				{{^queue}}
+					<div class="empty_text">Nothing In Queue</div>
+				{{/queue}}
 
 			</div>
 

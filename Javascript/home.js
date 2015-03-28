@@ -48,8 +48,15 @@ $(document).ready(function(){
 			console.log(selected_sequence);
 			$('#'+selected_sequence).removeClass('selected');
 			//swal('Success!', 'Now sit back and watch your creation in action', 'Success');			
-			$.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
-				//console.log('returned '+data);
+			// $.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
+			// 	//console.log('returned '+data);
+			// });
+
+			$.post('../Controller/sequence_manager.php', {
+				add_to_queue: selected_sequence,
+				loop: 'false'
+			}).done(function(data) {
+				console.log('returned '+data);
 			});
 		});
 
