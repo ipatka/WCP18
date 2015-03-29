@@ -54,6 +54,7 @@
 				<br><br>
 				<a class ="button body" href="/New_Sequence">New Sequence</a>
 				<a class="button body" id="refresh_queue" href="/">Refresh Queue</a>
+				<div class="button body" id="clear_queue">Clear Queue</div>
 
 
 
@@ -78,7 +79,7 @@
 				</div> -->
 
 				{{#queue}}
-					<div id="{{sequence_id}}" class="queue_sequence">{{sequence_name}}</div>
+					<div id="{{sequence_id}}" class="queue_sequence">{{sequence_name}} {{loop}}</div>
 				{{/queue}}
 				{{^queue}}
 					<div class="empty_text">Nothing In Queue</div>

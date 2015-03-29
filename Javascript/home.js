@@ -108,6 +108,15 @@ $(document).ready(function(){
 
 		});
 
+		$(document).on('click','#clear_queue',function() {
+				$.post('../Controller/sequence_manager.php', {
+					clear_queue: 'Nozzle1'
+				}).done(function(data) {
+					console.log('returned '+data);
+					window.location.href = '/';
+				});			
+		});
+
 
 		//$("#live_feed").click(function(){
 		//	swal("Webcam Disconnected","Please reconnect the webcam","warning")

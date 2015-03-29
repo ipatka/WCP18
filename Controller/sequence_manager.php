@@ -28,7 +28,7 @@ class Controller_Sequence_Manager extends Controller_Base {
             echo json_encode($sequence_array);
         }
 
-        if ($_POST['add_to_queue']) {
+        else if ($_POST['add_to_queue']) {
             $queue_sequence_name = $_POST['add_to_queue'];
             $myFile = "../Queue/".$queue_sequence_name.".json";
             $fh = fopen($myFile, 'w') or die("can't open file");
@@ -38,31 +38,47 @@ class Controller_Sequence_Manager extends Controller_Base {
             echo json_encode('Added '.$loop.' to queue');
         }
 
-        if ($_POST['cancel_loop']) {
+        else if ($_POST['cancel_loop']) {
             $dir = '../Queue/';
             $files = array_slice(scandir($dir), 2);
             $extensions = array("json");
 
-            $j = 0;
             foreach ($files as &$filename) {
                 $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
                 if (in_array($ext, $extensions)) {
-                    $loop = file_get_contents($file_in_queue);
+                    $loop = file_get_contents($dir.$filename);
                     if ($loop == 'true') {
-                        echo json_encode(unlink($file_in_queue));
+                        $fh = fopen($dir.$filename, 'w') or die("can't open file");
+                        fwrite($fh, 'false');
+                        fclose($fh);
+                        return;
                     }
+                } 
+            
+            };
+        }
 
+        else if ($_POST['clear_queue']) {
+            $dir = '../Queue/';
+            $files = array_slice(scandir($dir), 2);
+            $extensions = array("json");
+
+            foreach ($files as &$filename) {
+                $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
+                if (in_array($ext, $extensions)) {
+                    echo json_encode('deleting '.$filename);
+                    echo json_encode(unlink($dir.$filename));
                 } 
             
             };
         }
 
 
-        if ($_POST['sequence_post']) {
+        else if ($_POST['sequence_post']) {
             $sequence_array = $_POST["sequence_post"];
         }
 
-        if ($_POST['preview_home']) {
+        else if ($_POST['preview_home']) {
             $file_name = str_replace(' ', '_', $_POST['preview_home']);
             $sequence_array_handle = $file_name.'.json';
             $file = "../Sequences/".$sequence_array_handle;
