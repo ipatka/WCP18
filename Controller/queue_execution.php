@@ -32,9 +32,9 @@ while(1) {
 	    $loop = file_get_contents($file_in_queue);
         echo json_encode($sequence_array);
         echo json_encode($loop);
-        // if ($loop == 'false') {
-        //     echo json_encode(unlink($file_in_queue));
-        // }
+        if ($loop == 'false') {
+             echo json_encode(unlink($file_in_queue));
+         }
 
 	    
     } else {
