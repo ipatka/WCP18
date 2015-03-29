@@ -57,6 +57,7 @@ $(document).ready(function(){
 				loop: 'false'
 			}).done(function(data) {
 				console.log('returned '+data);
+				window.location.href = '/';
 			});
 		});
 
