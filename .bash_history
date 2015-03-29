@@ -1,133 +1,3 @@
-ls
-nano sequence_manager.php 
-nano sequence_manager.php 
-cd ..
-ls
-cd external_libraries/php-blinker/
-nano myBlinker 
-git status
-git reset --hard 127af9f
-git status
-git pull origin master
-cd /
-cd ..
-ls
-crontec -e
-crontab -e
-crontab
-crontab -e
-cd home/
-ls
-cd wcp18/
-ls
-cd email_ip/
-ls
-cat startup_mailer.py 
-nano startup_mailer.py 
-cd ..
-cd /
-ls
-cd ~
-ls
-cd Controller/
-cd ..
-ls
-cd Controller/
-nano sequence_manager.php 
-cd ..
-ls
-git log
-sudo visudo
-git reset --hard 127af9ffe611bfd4c298a83209a01fd283b6de1a
-sudo apt-get install libjpeg8-dev imagemagick libv4l-dev
-sudo apt-get install subversion
-cd ~
-svn co https://svn.code.sf.net/p/mjpg-streamer/code/mjpg-streamer/mjpg-streamer
-nano index.php 
-ls -a
-cat README.md l[B
-ls
-cd ~
-ls
-cd ..
-ls
-cd email_ip/
-ls
-nano startup_mailer.py 
-ls
-nano startup_mailer.py 
-ls
-cd ..
-ls
-mkdir my_little_dns
-mv email_ip/my_little_dns.py my_little_dns/my_little_dns.py
-ls
-cd my_little_dns/
-nano my_little_dns.py 
-nano index.html
-nano index.html.template
-nano index.html.template
-rm index.html.template 
-ls
-nano in
-ls
-nano index.html.txt
-ls
-nano my_little_dns.py 
-nano index.html.txt
-nano my_little_dns.py 
-sudo visudo
-top
-sudo visudo
-top
-exit
-ls
-git status
-git pull origin master
-gs
-git status
-cd Controller/
-ls
-cd ..
-ls
-cd external_libraries/php-blinker/
-ls
-nano myBlinker 
-cd ..
-ls
-cd ..
-cd Controller/
-ls
-nano sequence_manager.php 
-nano sequence_manager.php 
-git history
-git log
-ls
-cd ..
-ls
-cd external_libraries/php-blinker/
-nano myBlinker 
-nano myBlinker 
-exit
-git pull origin master
-cd Controller/
-ls
-nano database_test.php 
-nano Base.php 
-nano Base.php 
-nano database_test.php 
-nano Base.php 
-nano Base.php 
-nano Base.php 
-nano Base.php 
-nano database_test.php 
-nano database_test.php 
-nano database_test.php 
-nano database_test.php 
-nano database_test.php 
-nano Base.php 
-nano Base.php 
-nano Base.php 
 nano Base.php 
 nano database_test.php 
 nano database_test.php 
@@ -498,3 +368,133 @@ texit
 sudo reboot
 mkdir /tmp/stream
 raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+ls
+git pull origin master
+git status
+git checkout .
+git status
+git add .
+git commit -m "new sequences"
+git pull origin master
+git status
+git push origin master
+sudo reboot
+cd /etc
+ls
+sudo nano rc.local 
+php /home/wcp18/WCP18/Controller/queue_execution.php 
+cd /home/wcp18/WCP18/Controller/
+ls
+php queue_execution.php 
+ls
+cd ..
+ls
+cd Queue/
+ls
+rm Nozzle2.json 
+rm Nozzle1.json 
+ls
+cd ../Controller/
+ls
+php queue_execution.php 
+nano queue_execution.php 
+git pull origin master
+php queue_execution.php 
+cd ..
+ls
+cd Sequences/
+ls
+cp Nozzle1.json ../Queue/Nozzle1.json
+ls
+cd ../Queue/
+ls
+cd ../Controller/
+ls
+php queue_execution.php 
+git pull origin master
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+ls
+sudo nano /etc/rc.local 
+ls
+cd Controller/
+ls
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+ls ../Queue/
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+git add .
+git commit -m "working on queue"
+git push origin master
+php queue_execution.php 
+cd ../Queue/
+sudo chmod -R wcp18 /home/wcp18/WCP18/Queue/
+sudo chmod 755 /home/wcp18/WCP18/Queue/
+cd ../Controller/
+cd ../Queue/
+ls
+ls -l
+sudo ls -l
+chmod 755
+chmod 755 /home/wcp18/WCP18/Queue/
+sudo ls -l
+ls -l ../Sequences/
+groups
+groups www-data
+groups wcp18
+chgrp www-data /home/wcp18/WCP18/Queue/
+chmod g+rwxs /home/wcp18/WCP18/Queue/
+cd ../Controller/
+ls
+php queue_execution.php 
+cd Controller/
+ls
+php queue_execution.php 
+php queue_execution.php 
+php queue_execution.php 
+sudo nano /etc/rc.local 
+sudo reboot
+cd Controller/
+ls
+php queue_execution.php 
+sudo visudo
+chmod 755 /home/wcp18/WCP18/Controller/queue_execution.php 
+./queue_execution.php
+ls
+cd ..
+ls
+cd external_libraries/
+ls
+cd php-blinker/
+ls
+cd ../../Controller/
+ls
+sudo visudo
+sudo nano /etc/rc.local
+sudo nano /etc/rc.local
+sudo nano /etc/rc.local
+sudo reboot
+cd Controller/
+ls
+php queue_execution.php 
+sudo nano /etc/rc.local 
+sudo reboot
+exit
