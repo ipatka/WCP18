@@ -46,19 +46,49 @@ $(document).ready(function(){
 		$(document).on('click','#add_to_queue',function() {
 			// var sequence_name = $('.selected');
 			console.log(selected_sequence);
-			$('#'+selected_sequence).removeClass('selected');
-			//swal('Success!', 'Now sit back and watch your creation in action', 'Success');			
-			// $.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
-			// 	//console.log('returned '+data);
-			// });
+			if (selected_sequence) {
+				$('#'+selected_sequence).removeClass('selected');
+				//swal('Success!', 'Now sit back and watch your creation in action', 'Success');			
+				// $.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
+				// 	//console.log('returned '+data);
+				// });
 
-			$.post('../Controller/sequence_manager.php', {
-				add_to_queue: selected_sequence,
-				loop: 'false'
-			}).done(function(data) {
-				console.log('returned '+data);
-				window.location.href = '/';
-			});
+				$.post('../Controller/sequence_manager.php', {
+					add_to_queue: selected_sequence,
+					loop: 'false'
+				}).done(function(data) {
+					console.log('returned '+data);
+					window.location.href = '/';
+				});				
+			} else {
+				swal('Oops...', 'Please select a sequence to add to the queue', 'error');
+			}
+
+
+		});
+
+		$(document).on('click','#loop',function() {
+			// var sequence_name = $('.selected');
+			console.log(selected_sequence);
+			if (selected_sequence) {
+				$('#'+selected_sequence).removeClass('selected');
+				//swal('Success!', 'Now sit back and watch your creation in action', 'Success');			
+				// $.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
+				// 	//console.log('returned '+data);
+				// });
+
+				$.post('../Controller/sequence_manager.php', {
+					add_to_queue: selected_sequence,
+					loop: 'true'
+				}).done(function(data) {
+					console.log('returned '+data);
+					window.location.href = '/';
+				});				
+			} else {
+				swal('Oops...', 'Please select a sequence to add to loop', 'error');
+			}
+
+
 		});
 
 
