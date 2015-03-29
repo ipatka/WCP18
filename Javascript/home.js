@@ -91,6 +91,23 @@ $(document).ready(function(){
 
 		});
 
+		$(document).on('click','#cancel_loop',function() {
+				$('#'+selected_sequence).removeClass('selected');
+				//swal('Success!', 'Now sit back and watch your creation in action', 'Success');			
+				// $.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
+				// 	//console.log('returned '+data);
+				// });
+
+				$.post('../Controller/sequence_manager.php', {
+					cancel_loop: 'true'
+				}).done(function(data) {
+					console.log('returned '+data);
+					window.location.href = '/';
+				});				
+
+
+		});
+
 
 		//$("#live_feed").click(function(){
 		//	swal("Webcam Disconnected","Please reconnect the webcam","warning")

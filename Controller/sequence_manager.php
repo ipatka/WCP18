@@ -38,6 +38,25 @@ class Controller_Sequence_Manager extends Controller_Base {
             echo json_encode('Added '.$loop.' to queue');
         }
 
+        if ($_POST['cancel_loop']) {
+            $dir = '../Queue/';
+            $files = array_slice(scandir($dir), 2);
+            $extensions = array("json");
+
+            $j = 0;
+            foreach ($files as &$filename) {
+                $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
+                if (in_array($ext, $extensions)) {
+                    $fh = fopen($myFile, 'w') or die("can't open file");
+                    fwrite($fh,'false');
+                    fclose($fh);
+                    echo json_encode('loops canceled');
+
+                } 
+            
+            };
+        }
+
 
         if ($_POST['sequence_post']) {
             $sequence_array = $_POST["sequence_post"];
