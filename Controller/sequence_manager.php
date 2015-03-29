@@ -47,10 +47,10 @@ class Controller_Sequence_Manager extends Controller_Base {
             foreach ($files as &$filename) {
                 $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
                 if (in_array($ext, $extensions)) {
-                    $fh = fopen($myFile, 'w') or die("can't open file");
-                    fwrite($fh,'false');
-                    fclose($fh);
-                    echo json_encode('loops canceled');
+                    $loop = file_get_contents($file_in_queue);
+                    if ($loop == 'true') {
+                        echo json_encode(unlink($file_in_queue));
+                    }
 
                 } 
             
