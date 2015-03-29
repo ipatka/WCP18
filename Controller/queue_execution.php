@@ -30,9 +30,10 @@ while(1) {
 	    $sequence_array = json_decode(file_get_contents($file_in_sequence));
 	    execute_sequence($sequence_array);
 	    $loop = file_get_contents($file_in_queue);
-        if ($loop == 'false') {
-            echo json_encode(unlink($file_in_queue));
-        }
+       // if ($loop == 'false') {
+         //   echo json_encode(unlink($file_in_queue));
+       // }
+		echo json_encode($loop);
 	    
     } else {
     	echo json_encode('nothing exists');
