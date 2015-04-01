@@ -65,6 +65,7 @@ float: left;
 
 #sequence_buttons{
 	margin: 20px auto;
+	margin-bottom: 0;
 }
 
 #queue{

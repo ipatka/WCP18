@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -78,15 +77,23 @@ class Controller_Sequence_Manager extends Controller_Base {
             $sequence_array = $_POST["sequence_post"];
         }
 
-        else if ($_POST['preview_home']) {
-            $file_name = str_replace(' ', '_', $_POST['preview_home']);
+        else if ($_POST['get_sequence_to_preview']) {
+            $file_name = str_replace(' ', '_', $_POST['get_sequence_to_preview']);
             $sequence_array_handle = $file_name.'.json';
             $file = "../Sequences/".$sequence_array_handle;
-            $sequence_preview = file_get_contents($file);
+            $sequence_preview = json_decode(file_get_contents($file));
             $sequence_preview_processed = preg_replace('/(\\")|(\[)|(\])/', "", $sequence_preview);
-            echo json_encode($sequence_preview_processed);
+            echo json_encode($sequence_preview);
         }
 
+        else if ($_POST['get_length_of_sequence']) {
+            $file_name = str_replace(' ', '_', $_POST['get_length_of_sequence']);
+            $sequence_array_handle = $file_name.'.json';
+            $file = "../Sequences/".$sequence_array_handle;
+            $sequence_preview = json_decode(file_get_contents($file));
+            $sequence_preview_processed = preg_replace('/(\\")|(\[)|(\])/', "", $sequence_preview);
+            echo json_encode(count($sequence_preview)); 
+        }
 
 
 

@@ -3,20 +3,26 @@ $(document).ready(function(){
 $(document).on('click', '#preview_home', function() {
 	$('.preview_content').show();
 	var selected = $('.selected').attr('id');
+	var num_rows = 0;
 	$.post('../Controller/sequence_manager.php', {
-		preview_home: selected
+		get_length_of_sequence: selected
+	}).done(function(data) {
+		console.log('returned '+data);
+		num_rows = data;
+	});
+	$.post('../Controller/sequence_manager.php', {
+		get_sequence_to_preview: selected
 	}).done(function(data) {
 		var interpreted = jQuery.parseJSON(data);
 		console.log('returned '+interpreted);
-		preview_sequence(interpreted);
+		preview_sequence(interpreted, num_rows);
 	});
 });
 
-function preview_sequence(sequence) {
+function preview_sequence(sequence, num_rows) {
 	console.log('sequence'+sequence);
-	var num_rows;// = $( "tr:last" ).data('count');
+
 	console.log('num rows '+num_rows);
-	num_rows = 8;
 
    var i = 0;
    var delay_time = sequence[i][8];
@@ -34,6 +40,7 @@ function preview_sequence(sequence) {
                 return;
             }
             delay_time = sequence[i][8];
+            console.log('delay_time '+delay_time);
             animate_frame(sequence[i]);
             i++;
             next();
