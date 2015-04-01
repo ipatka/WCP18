@@ -60,6 +60,26 @@ padding: 30px 30px;
 	text-decoration: none;
 }
 
+.button_icon{
+	cursor: pointer;
+	display: inline-block;
+}
+
+a.button_icon{
+	text-decoration: none;
+}
+
+.button_row{
+	display: block;
+}
+
+
+
+.icon{
+	width: 35px;
+	height: auto;
+}
+
 .button:hover{
 	background-color: rgb(149,171,99);
 	color: white;

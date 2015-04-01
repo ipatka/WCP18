@@ -42,19 +42,39 @@
 			</div>
 
 			<div id="sequence_buttons">
-				
-				<div class="button body" id="preview_home">Preview</div>
-				<div class ="button body" id="add_to_queue">Add to queue</div>
-				<div class="button body" id="loop">
-					Loop
+
+				<div class="button_row">
+				<a class="button_icon" href="/New_Sequence">
+					<img src="../Images/plus.svg" class="icon">
+				</a>		
+				</div>	
+
+				<div class="button_row">
+					<div class="button_icon" id="preview_home">
+						<img src="../Images/info.svg">
+					</div>
+					<div class="button_icon" id="add_to_queue">
+						<img src="../Images/play.svg" class="icon">
+					</div>
+					<div class="button_icon" id="loop">
+						<img src="../Images/loop.svg" class="icon">
+					</div>
 				</div>
-				<div class="button body" id="cancel_loop">
-					Cancel Loop
+
+				<div class="button_row">
+					<div class="button_icon" id="cancel_loop">
+						<img src="../Images/next.svg" class="icon">
+					</div>
+					<div class="button_icon" id="clear_queue">
+						<img src="../Images/close-circle.svg" class="icon">
+					</div>
 				</div>
+	
+
+
 				<br><br>
-				<a class ="button body" href="/New_Sequence">New Sequence</a>
-				<a class="button body" id="refresh_queue" href="/">Refresh Queue</a>
-				<div class="button body" id="clear_queue">Clear Queue</div>
+				
+
 
 
 
@@ -66,13 +86,18 @@
 
 		<div id="queue">
 
-			<a class="button" target="_blank" id="live_feed">Live Feed</a>
+			<a class="button" target="_blank" id="live_feed">
+				<img class="overlay_icon" src="../Images/view.svg"></a>
 
 			<div class="sub_header" id="queue_text">
 				Queue
 			</div>
 
 			<div id="queue_box">
+				<a class="button_icon top_right" id="refresh_queue" href="/">
+					<img src="../Images/refresh.svg" class="overlay_icon">
+				</a>
+
 <!-- 				<div class="queue_inner_text body">Sequence
 				</div>
 				<div class="queue_inner_text body">Time remaining
