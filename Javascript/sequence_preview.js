@@ -1,9 +1,9 @@
 $(document).ready(function(){
-
+var num_rows = 0;
 $(document).on('click', '#preview_home', function() {
 	$('.preview_content').show();
 	var selected = $('.selected').attr('id');
-	var num_rows = 0;
+	
 	$.post('../Controller/sequence_manager.php', {
 		get_length_of_sequence: selected
 	}).done(function(data) {
@@ -20,6 +20,7 @@ $(document).on('click', '#preview_home', function() {
 });
 
 function preview_sequence(sequence, num_rows) {
+	num_rows--;
 	console.log('sequence'+sequence);
 
 	console.log('num rows '+num_rows);
