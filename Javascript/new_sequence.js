@@ -144,7 +144,7 @@ function preview_sequence(sequence) {
    var i = 0;
    var delay_time = sequence[i][8];
    console.log('sequence i'+sequence[i]);
-   animate_frame(sequence[i]);
+   animate_frame(sequence[i],i);
    i++;
    next();
     function next() {
@@ -157,7 +157,7 @@ function preview_sequence(sequence) {
                 return;
             }
             delay_time = sequence[i][8];
-            animate_frame(sequence[i]);
+            animate_frame(sequence[i],i);
             i++;
             next();
         }, delay_time * 1000);
@@ -166,7 +166,9 @@ function preview_sequence(sequence) {
 
 }
 
-function animate_frame(frame) {
+function animate_frame(frame,count) {
+	count++;
+	$('#frame_counter').text(count);
 	console.log('frame '+frame);
 	for (var j = 0; j < 8; j++) {
 		console.log('nozzle '+frame[j]);

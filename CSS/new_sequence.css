@@ -1,18 +1,20 @@
 
 #content_sequence{
-	/*background-color: rgb(216,216,216);*/
-background-color: rgba(226,240,214,0.7);
-	text-align: center;
-	margin: auto;
-	border-radius: 4px;
 
-
-	padding: 10px 20px;
-
-	width: 700px;
 	height: 450px;
 	max-height: 450px;
 	overflow-y: auto;
+
+}
+
+.content_sequence_wrapper{
+	background-color: rgba(226,240,214,0.7);
+	width: 700px;
+	padding: 10px 20px;
+	text-align: center;
+	margin: auto;
+
+	border-radius: 4px;
 
 }
 
@@ -69,4 +71,5 @@ padding: auto;
 	margin-right: 20px;
 	border-radius: 3px;
 	padding-left: 4px;
+	vertical-align: top;
 }

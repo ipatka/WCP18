@@ -128,3 +128,27 @@ left: 15px;
 a.icon_text{
 	text-decoration: none;
 }
+
+.gray_seperator{
+	border: none;
+	background-color: #eee;
+	color: #eee;
+	height: 1px;
+}
+
+.top_right{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: auto;
+	width: auto;
+	z-index: 10;
+}
+.top_left{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: auto;
+	width: auto;
+	z-index: 10;
+}

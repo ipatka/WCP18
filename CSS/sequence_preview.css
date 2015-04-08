@@ -11,6 +11,8 @@
 
 	width: 700px;
 	height: 250px;
+
+	position: relative;
 }
 
 .preview_content_new{
@@ -26,6 +28,8 @@
 
 	width: 700px;
 	height: 250px;
+
+	position: relative;
 }
 
 .preview_overlay{
