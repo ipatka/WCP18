@@ -31,7 +31,19 @@
 	<div id="content_welcome">
 		<div id="sequence_select">
 
-			<div class="sub_header" id="sequence_select_text">Select a sequence from below or create your own!
+			<div class="sub_header" id="sequence_select_text">Create your own sequence...
+			</div>
+
+
+			<div class="big_button">
+				<a class="button_icon" href="/New_Sequence">
+					<img src="../Images/plus.svg" class="icon_big">
+					<div class="icon_text">New Sequence</div>
+				</a>	
+			</div>
+
+
+			<div class="sub_header" id="sequence_select_text">Or select one of these!
 			</div>
 
 			<div id="sequence_box">
@@ -61,14 +73,8 @@
 
 
 				<div class="button_row">
-					<a class="button_icon" href="/New_Sequence">
-						<img src="../Images/plus.svg" class="icon_big">
-						<div class="icon_text">New Sequence</div>
-					</a>	
-					<div class="button_icon" id="cancel_loop">
-						<img src="../Images/check.svg" class="icon_big">
-						<div class="icon_text">End Loop</div>
-					</div>
+
+
 					<div class="button_icon" id="clear_queue">
 						<img src="../Images/close-circle.svg" class="icon_big">
 						<div class="icon_text">Clear Queue</div>
@@ -95,13 +101,12 @@
 				<img class="overlay_icon" src="../Images/view.svg"></a>
 
 			<div class="sub_header" id="queue_text">
-				Queue
+				<span class="inline_text">Queue</span>
+				<a class="inline_button" href="/"><img class="inline_img" src="../Images/refresh.svg"></a>
 			</div>
 
 			<div id="queue_box">
-				<a class="button_icon top_right" id="refresh_queue" href="/">
-					<img src="../Images/refresh.svg" class="overlay_icon">
-				</a>
+				
 
 <!-- 				<div class="queue_inner_text body">Sequence
 				</div>
@@ -109,7 +114,18 @@
 				</div> -->
 
 				{{#queue}}
-					<div id="{{sequence_id}}" class="queue_sequence">{{sequence_name}} {{loop}}</div>
+					<div id="{{sequence_id}}" class="queue_sequence">
+						<span class="inline_text">{{sequence_name}}
+						</span>
+						{{#loop}}
+							<span class="inline_icon" style="display:none" id="cancel_loop">
+								<img class="inline_img active" src="../Images/loop.svg">
+							</span>
+						{{/loop}}
+							<span class="inline_button" style="display:none" id="skip">
+								<img class="inline_img active" src="../Images/close-circle.svg">
+							</span>
+					</div>
 				{{/queue}}
 				{{^queue}}
 					<div class="empty_text">Nothing In Queue</div>
@@ -121,7 +137,7 @@
 
 
 	</div>
-	<div class="preview_content" style="display:none">
+	<div class="preview_content" style="display:none" id="preview_home_section">
 		<div class="stream_preview" id="valve_1">
 			<div class="preview_overlay" style="display:none"></div>
 		</div>

@@ -1,9 +1,16 @@
 $(document).ready(function(){
 var num_rows = 0;
 $(document).on('click', '#preview_home', function() {
-	$('.preview_content').show();
+
+	
 	var selected = $('.selected').attr('id');
 	
+
+	if (selected) {
+	$('.preview_content').show();
+
+	$('html, body').animate({ scrollTop: $('#preview_home_section').offset().top + 10}, 500);
+
 	$.post('../Controller/sequence_manager.php', {
 		get_length_of_sequence: selected
 	}).done(function(data) {
@@ -17,6 +24,7 @@ $(document).on('click', '#preview_home', function() {
 		console.log('returned '+interpreted);
 		preview_sequence(interpreted, num_rows);
 	});
+}	
 });
 
 function preview_sequence(sequence, num_rows) {

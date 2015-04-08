@@ -37,7 +37,10 @@ class Controller_Sequence_Manager extends Controller_Base {
             echo json_encode('Added '.$loop.' to queue');
         }
 
-        else if ($_POST['cancel_loop']) {
+        else if ($_POST['skip']) {
+
+            $sequence_to_cancel = $_POST['sequence'];
+
             $dir = '../Queue/';
             $files = array_slice(scandir($dir), 2);
             $extensions = array("json");
@@ -45,13 +48,13 @@ class Controller_Sequence_Manager extends Controller_Base {
             foreach ($files as &$filename) {
                 $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
                 if (in_array($ext, $extensions)) {
-                    $loop = file_get_contents($dir.$filename);
-                    if ($loop == 'true') {
-                        $fh = fopen($dir.$filename, 'w') or die("can't open file");
-                        fwrite($fh, 'false');
-                        fclose($fh);
+                    echo json_encode($sequence_to_cancel);
+                    if ($filename == $sequence_to_cancel.'.json') {
+                        echo json_encode('deleting '.$filename);
+                        echo json_encode(unlink($dir.$filename));
                         return;
                     }
+
                 } 
             
             };

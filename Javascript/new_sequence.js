@@ -13,6 +13,7 @@ $(document).ready(function(){
 		console.log("add_more_rows");
 		var row_template = getNextRow();
 		$('tr:last').after(row_template);
+		$("#content_sequence").animate({ scrollTop: $('#content_sequence').prop("scrollHeight") }, 500);
 	});
 
 
@@ -53,7 +54,8 @@ $(document).ready(function(){
 
 
 	$(document).on('click', '#preview', function() {
-		$('.preview_content').show();
+		$('.preview_content_new').show();
+		$('html, body').animate({ scrollTop: $('.preview_content_new').offset().top + 10}, 500);
 		var num_rows = $( "tr:last" ).data('count');
 		var object_to_preview = create_sequence_object(num_rows);
 		console.log(object_to_preview);
@@ -151,7 +153,7 @@ function preview_sequence(sequence) {
         	
             if (i == num_rows) {
             	clear_frame();
-            	$('.preview_content').hide(300);
+            	$('.preview_content_new').hide(300);
                 return;
             }
             delay_time = sequence[i][8];

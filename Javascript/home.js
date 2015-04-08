@@ -7,6 +7,17 @@ $(document).ready(function(){
 		var ip = window.location.hostname;
 		$('#live_feed').attr('href','http://'+ip+':8080/fountain_stream.html');
 
+		$('.queue_sequence').first().addClass('selected');
+		$('.queue_sequence').first().children('.inline_icon').show();
+
+		$('.queue_sequence').mouseenter(function() {
+			$(this).children('.inline_button').show();
+		});
+
+		$('.queue_sequence').mouseleave(function() {
+			$(this).children('.inline_button').hide();
+		});
+
 		var sequence_selected = false;
 		var selected_sequence;
 
@@ -91,15 +102,16 @@ $(document).ready(function(){
 
 		});
 
-		$(document).on('click','#cancel_loop',function() {
-				$('#'+selected_sequence).removeClass('selected');
+		$(document).on('click','#skip',function() {
+				var sequence_to_cancel = $(event.target).parents('.queue_sequence').attr('id');
 				//swal('Success!', 'Now sit back and watch your creation in action', 'Success');			
 				// $.post('../Controller/sequence_manager.php', {execute_from_home: selected_sequence}).done(function(data) {
 				// 	//console.log('returned '+data);
 				// });
 
 				$.post('../Controller/sequence_manager.php', {
-					cancel_loop: 'true'
+					skip: 'true',
+					sequence: sequence_to_cancel 
 				}).done(function(data) {
 					console.log('returned '+data);
 					window.location.href = '/';

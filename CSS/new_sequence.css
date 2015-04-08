@@ -1,7 +1,7 @@
 
 #content_sequence{
-	background-color: rgb(216,216,216);
-
+	/*background-color: rgb(216,216,216);*/
+background-color: rgba(226,240,214,0.7);
 	text-align: center;
 	margin: auto;
 	border-radius: 4px;
@@ -32,7 +32,7 @@
 	height: 60px;
 	margin: 20px auto;
 	border: #979797 solid 1px;
-	background-color: rgba(155,155,155,.5);
+	background-color: rgba(216,216,216,0.75);
 	border-radius: 6px;
 	display: inline-block;
 }
