@@ -44,6 +44,7 @@ $(document).ready(function(){
 				$(this).toggleClass("selected");
 				sequence_selected = false;
 				console.log("same selected");
+				selected_sequence = null;
 
 
 			}
