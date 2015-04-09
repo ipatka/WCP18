@@ -7,24 +7,26 @@ $(document).on('click', '#preview_home', function() {
 	
 
 	if (selected) {
-	$('.preview_content').show();
+		$('.preview_content').show();
 
-	$('html, body').animate({ scrollTop: $('#preview_home_section').offset().top + 10}, 500);
+		$('html, body').animate({ scrollTop: $('#preview_home_section').offset().top + 10}, 500);
 
-	$.post('../Controller/sequence_manager.php', {
-		get_length_of_sequence: selected
-	}).done(function(data) {
-		console.log('returned '+data);
-		num_rows = data;
-	});
-	$.post('../Controller/sequence_manager.php', {
-		get_sequence_to_preview: selected
-	}).done(function(data) {
-		var interpreted = jQuery.parseJSON(data);
-		console.log('returned '+interpreted);
-		preview_sequence(interpreted, num_rows);
-	});
-}	
+		$.post('../Controller/sequence_manager.php', {
+			get_length_of_sequence: selected
+		}).done(function(data) {
+			console.log('returned '+data);
+			num_rows = data;
+		});
+		$.post('../Controller/sequence_manager.php', {
+			get_sequence_to_preview: selected
+		}).done(function(data) {
+			var interpreted = jQuery.parseJSON(data);
+			console.log('returned '+interpreted);
+			preview_sequence(interpreted, num_rows);
+		});
+	} else {
+				swal('Oops...', 'Please select a sequence to preview', 'error');
+			}
 });
 
 function preview_sequence(sequence, num_rows) {
