@@ -1,3 +1,7 @@
+body{
+	min-width: 1000px;
+}
+
 
 #content_sequence{
 
@@ -5,16 +9,20 @@
 	max-height: 450px;
 	overflow-y: auto;
 
+	padding: 0 20px;
+
 }
 
 .content_sequence_wrapper{
 	background-color: rgba(226,240,214,0.7);
 	width: 700px;
-	padding: 10px 20px;
+	padding: 10px 0;
 	text-align: center;
 	margin: auto;
 
 	border-radius: 4px;
+
+	margin-bottom: 20px;
 
 }
 

@@ -1,57 +1,70 @@
-#!/usr/bin/env php
 <?php
 
-while(1) {
-	unset($queue);
-    $dir = '../Queue/';
-    $files = array_slice(scandir($dir), 2);
-	$extensions = array("json");
+include 'Base.php';
 
-    $j = 0;
-    foreach ($files as &$filename) {
-        $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
-        if (in_array($ext, $extensions)) {
+class Controller_Fountain_Config extends Controller_Base {
 
-
-            # code...
-        $filename = basename($dir.$filename, '.json');
-        $queue[$j] = $filename;
-	echo json_encode($filename);
-        $j++;
-        } 
-    
-    };
-	//echo json_encode($queue[0]);
-    if ($queue[0]) {
-    	echo json_encode('queue exists');
-	echo json_encode('sequence name '.$queue[0]);
-	    $sequence_name = $queue[0].'.json';
-	    $file_in_sequence = "../Sequences/".$sequence_name;
-	    $file_in_queue = "../Queue/".$sequence_name;
-	    $sequence_array = json_decode(file_get_contents($file_in_sequence));
-	    execute_sequence($sequence_array);
-	    $loop = file_get_contents($file_in_queue);
-        echo json_encode($sequence_array);
-        echo json_encode($loop);
-        if ($loop == 'false') {
-             echo json_encode(unlink($file_in_queue));
-         }
-
-	    
-    } else {
-    	echo json_encode('nothing exists');
+    function __construct() {
+        parent::__construct();
     }
 
-    
-    // if loop, don't remove from queue
-    // else, remove from queue
+    public function route() {
+        
+    	if ($_POST['instruction']) {
+    		$instruction = $_POST['instruction'];
+    	}
 
-}
+    	
+
+    	switch ($instruction) {
+    		case 'start_execution':
+    			// echo exec('sudo ./queue_execution.php');
+    			$running = exec('pgrep -fl queue_execution.php');
+    			if ($running == '') {
+    				echo 'exec_started';
+    				exec('./queue_execution.php');
+    			} else {
+    				echo 'running_already';
+    			}
+    			// echo json_encode('Start');
+    			break;
+
+    		case 'stop_execution':
+    			$running = exec('pgrep -fl queue_execution.php');
+    			if ($running == '') {
+    				echo 'not_running';
+    			} else {
+	    			exec('pkill -f queue_execution.php');
+	    			echo 'stop';
+    			}
+
+    			break;
+
+    		case 'nozzle_test':
+    			$running = exec('pgrep -fl queue_execution.php');
+    			if ($running == '') {
+	    			$sequence = $_POST['sequence'];
+	    			$sequence_name = $sequence.'.json';
+	    			$file_in_sequence = "../Maintenance/".$sequence_name;
+	    			$sequence_array = json_decode(file_get_contents($file_in_sequence));
+	    			$this->execute_sequence($sequence_array);
+	    			echo json_encode($sequence_array);
+    			} else {
+    				echo 'error';
+    			}
+    			break;
 
 
+    		
+    		default:
+    			echo json_encode('No Valid Instruction');
+    			break;
+    	}
+
+    }
 
 
-function execute_sequence($sequence_to_execute) {
+	private function execute_sequence($sequence_to_execute) {
         $interpret = array(4 , 17 , 27 , 22 , 18 , 23 , 24 , 25);
         
         $frame = 1;
@@ -103,6 +116,10 @@ function execute_sequence($sequence_to_execute) {
         exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins_open) . '" "' . serialize($pins_close) . '" "' . addslashes($frame_length) . '"');
     }
 
+    
+}
 
+$config = new Controller_Fountain_Config();
+$config->route();
 
 ?>
