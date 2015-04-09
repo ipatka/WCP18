@@ -60,8 +60,8 @@ function preview_sequence(sequence, num_rows) {
 }
 
 function animate_frame(frame,count) {
-	count++;
-	$('#frame_counter').text(count);
+	// count++;
+	$('#frame_counter').text(count+1);
 	console.log('frame '+frame);
 	for (var j = 0; j < 8; j++) {
 		console.log('nozzle '+frame[j]);
