@@ -98,7 +98,7 @@ function execute_sequence($sequence_to_execute) {
         // Close all pins
         $pins_close = $interpret;
         // frame length not important
-        $frame_length = 1;
+        //$frame_length = 2;
         // turn off pins
         exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins_open) . '" "' . serialize($pins_close) . '" "' . addslashes($frame_length) . '"');
     }
