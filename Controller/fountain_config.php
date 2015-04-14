@@ -42,15 +42,13 @@ class Controller_Fountain_Config extends Controller_Base {
     			break;
 
             case 'start_webcam':
-                exec('mkdir /tmp/stream');
-                exec('raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &');
-                exec('sudo LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"');
+                echo 'start cam';
+                exec('sudo ./start_webcam.sh');
                 break;
 
             case 'stop_webcam':
-                exec('sudo pkill -f mjpg_streamer');
-                exec('pkill -f raspistill');
-                exec('rm -rf /tmp/stream/');
+                echo 'stop cam';
+                exec('sudo ./stop_webcam.sh');
                 break;
 
 
