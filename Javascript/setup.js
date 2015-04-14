@@ -9,6 +9,10 @@ $(document).on('click', '.button_icon', function() {
 
 	if (id == 'start_execution') {
 		swal('Success', 'Queue execution started', 'success');
+	} else if (id == 'start_webcam') {
+		swal('Success', 'Webcam Started', 'success');
+	} else if (id == 'stop_webcam') {
+		swal('Success', 'Webcam Stopped', 'success');
 	}
 
 	if (target.hasClass('maintenance_sequence')) {
