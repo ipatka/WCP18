@@ -7,6 +7,10 @@ $(document).on('click', '.button_icon', function() {
 	var id = target.attr('id');
 	console.log('clicked '+id);
 
+	if (id == 'start_execution') {
+		swal('Success', 'Queue execution started', 'success');
+	}
+
 	if (target.hasClass('maintenance_sequence')) {
 		$.post('../Controller/fountain_config.php', {
 			instruction: 'nozzle_test',

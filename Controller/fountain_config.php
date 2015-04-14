@@ -18,40 +18,27 @@ class Controller_Fountain_Config extends Controller_Base {
 
     	switch ($instruction) {
     		case 'start_execution':
-    			// echo exec('sudo ./queue_execution.php');
-    			$running = exec('pgrep -fl queue_execution.php');
-    			if ($running == '') {
+
     				echo 'exec_started';
+                    exec('pkill -f queue_execution.php');
     				exec('./queue_execution.php');
-    			} else {
-    				echo 'running_already';
-    			}
+
     			// echo json_encode('Start');
     			break;
 
     		case 'stop_execution':
-    			$running = exec('pgrep -fl queue_execution.php');
-    			if ($running == '') {
-    				echo 'not_running';
-    			} else {
+                    echo 'stop';
 	    			exec('pkill -f queue_execution.php');
-	    			echo 'stop';
-    			}
-
     			break;
 
     		case 'nozzle_test':
-    			$running = exec('pgrep -fl queue_execution.php');
-    			if ($running == '') {
+    			exec('pkill -f queue_execution.php');
 	    			$sequence = $_POST['sequence'];
 	    			$sequence_name = $sequence.'.json';
 	    			$file_in_sequence = "../Maintenance/".$sequence_name;
 	    			$sequence_array = json_decode(file_get_contents($file_in_sequence));
 	    			$this->execute_sequence($sequence_array);
 	    			echo json_encode($sequence_array);
-    			} else {
-    				echo 'error';
-    			}
     			break;
 
 
