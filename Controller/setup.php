@@ -21,6 +21,8 @@ class Controller_Setup extends Controller_Base {
             $data['running'] = 'true';
         }
 
+        $data['returned'] = $running;
+
 
 
 

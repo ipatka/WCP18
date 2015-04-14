@@ -31,6 +31,17 @@
 
 		<div class="button_row">
 
+			{{#running}}
+			<span>Running</span>
+			{{/running}}
+
+
+			{{#not_running}}
+			<span>Not Running</span>
+			{{/not_running}}
+
+			<span>Returned {{returned}}</span>
+
 			<div class="button_icon" id="start_execution">
 				<img src="../Images/play.svg" class="icon_big">
 				<div class="icon_text">Start Execution</div>
