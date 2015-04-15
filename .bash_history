@@ -1,454 +1,500 @@
-sudo -i
-sudo -i
-sudo -i
-exit
-sudo -i
-exit
-gpio mode 0 out
-gpio write 0 1
-gpio mode 17 out
-gpio write 17 1
-gpio mode 2 out
-gpio write 2 1
-gpio write 17 0
-gpio write 2 0
-gpio clear
-gpio mode 0 in
-gpio mode 17 in
-gpio mode 17 out
-gpio write 17 out
-gpio mode 0 out
-gpio write 0 0
-gpio write gpio mode 8 out
-gpio write 8 0
-gpio mode 8 out
-gpio write 8 1
-gpio write 8 0
-sudo modprobe w1-gpio
-sudo nano /etc/modules
-sudo nano /etc/modules
-wget http://getcomposer.org/composer.phar
-php composer.phar create-project --stability='dev' ronanguilloux/php-gpio intoYourPath
-ls
-rm off.jpg
-sudo rm on.jpg
-ls
-ls intoYourPath/
-cd ..
-mv intoYourPath/* external_libraries
-mv -v intoYourPath/* external_libraries
-ls
-ls
-cd WCP18/
-ls
-mv -v intoYourPath/* external_libraries
-ls
-ls intoYourPath/
-ls external_libraries/
-ls -a
-ls external_libraries/ -a
-ls
-cd external_libraries/
-ls
-sudo nano blinkerTest.php 
-ls
-mkdir blinker
-ls
-ls
-cd ..
-cd ..
-ls
-mkdir php-gpio-web
-cd php-gpio-web/
-git clone git://github.com/ronanguilloux/php-gpio-web.git
-cd php-gpio-web
-curl -sS https://getcomposer.org/installer | php
-php composer.phar install
-ls
-cp ventor/ronanguilloux/php-gpio/blinker
-cp ventor/ronanguilloux/php-gpio/blinker .
-chmod a+x blinker
-ls
-cp ventor/ronanguilloux/php-gpio/blinker .
-cp vendor/ronanguilloux/php-gpio/blinker .
-chmod a+x blinker
-ls
-cd web/
-ls
-cd ..
-php -s "'dancingfountain -I':8080" -t web/
-php -s "'hostname -I':8080" -t web/
-php -s "'192.168.1.254 -I':8080" -t web/
-ls
-ls
-sudo nano apache2.conf 
-cd ~/WCP18
-cd ~WCP18
-ls
-cd ~
-ls
-rm composer.phar 
-ls
-git status
-git add .
-gs
-git commit -m "added php gpio files to external libraries
-"
-git commit -m "added php gpio files to ext"
-git config --global user.email "ipatka@gmail.com"
-git config --global user.name "Isaac Patka"
-git commit -m "added php gpio files to ext"
-git pull origin master
-git push origin master
-git push origin master
-git pull origin master
-git status
-git push origin master
-ls
-cd external_libraries/
-ls
-cd php-blinker/
-ls
-sudo ./blinker
-sudo ./blinker 17 200000
-sudo ./blinker 17 200000
-sudo ./blinker 17 200000
-sudo ./blinker 2 200000
-cd ..
-cd ..
-ls
-git pull origin master
-sudo ./blinker 17 200000
-ls
-cd external_libraries/
-ls
-cd php-blinker/
-ls
-sudo ./blinker 17 200000
-ls
-cd ..
-cd ..
-sudo /external_libraries/php-blinker/./blinker 17 200000
-sudo ./external_libraries/php-blinker/blinker 17 200000
-git status
-git hist
-git history
+nano Base.php 
+nano database_test.php 
+nano database_test.php 
 git log
-git reset --hard 930a0d445a896dd8665f1ae2edee32f68af383c0
+git reset --hard 6bdf442e2a249aaebc788ac8a0bd58b040f60428
+ls
+cd ..
+ls
 git status
-git pull origin master
-git pull origin master
-ls
-sudo nano blinker_practice/index.php 
-sudo nano blinker_practice/index.php 
-sudo nano blinker_practice/index.php 
-sudo nano blinker_practice/index.php 
-sudo nano blinker_practice/index.php 
-ls
-cd /external_libraries
-sudo nano blinker_practice/index.php 
-ls
-sudo nano blinker_practice/index.php 
-sudo nano blinker_practice/index.php 
-cd blinker_practice/
-cd ../external_libraries/
-cd ..
-ls
-sudo visudo
-ls
-cd /
-ls
-cd /home/wcp18/WCP18/external_libraries/
-ls
-cd php-blinker/
-ls
-cd /
-cd /home/wcp18/WCP18/external_libraries/php-blinker/
-ls
-sudo visudo
-sudo visudo
-sudo visudo
-sudo visudo
-sudo visudo
-sudo visudo
-exit
-ls
-sudo visudo
-exit
-ls
-cd external_libraries/php-blinker/
-ls
-php blinkerTest.php 
-ls
-sudo nano blinkerTest.php 
-php blinkerTest.php 
-sudo nano blinker
-php blinkerTest.php 
-sudo nano blinkerTest.php 
-php blinkerTest.php 
-sudo nano blinker
-sudo nano blinkerTest.php 
-sudo nano blinker
-php blinkerTest.php 
-cd .
-ls
-cd ..
-ls
-cd ..
+go 6bdf442e2a249aaebc788ac8a0bd58b040f60428
+git checkout 6bdf442e2a249aaebc788ac8a0bd58b040f60428
+git reset --hard 6bdf442e2a249aaebc788ac8a0bd58b040f60428
 git status
-git add .
-git commit -m "modified blinker"
-git pull origin master
-git push origin master
-ls
-cd external_libraries/
-ls
-cd php-blinker/
-ls
-sudo nano blinker
-cd ..
-cd ..
-git pull origin master
-sudo visudo
-sudo visudo
-sudo nano blinkerTest
-ls
-cd external_libraries/php-blinker/
-ls
-sudo nano blinkerTest.php 
-php blinkerTest.php 
-sudo nano blinkerTest.php 
-sudo nano blinkerTest.php 
-php blinkerTest.php 
-cd /
-ls
-cd /home/wcp18/WCP18/
-git pull origin master
-php blinkerTest.php 
-cd external_libraries/php-blinker/
-php blinkerTest.php 
-php -l blinker
-sudo nano blinker
-sudo nano blinker
-sudo nano blinker
-php -l blinker
-php blinkerTest.php 
-sudo nano blinkerTest.php 
-php blinkerTest.php 
-php blinkerTest.php 
-sudo nano blinker
-php blinkerTest.php 
-ls
-sudo nano src/PhpGpio/Gpio.php
-php blinkerTest.php 
-sudo nano src/PhpGpio/Gpio.php
-ls
-sudo nano blinker
-php blinkerTest.php
-sudo nano blinker
-sudo nano blinker
-php blinkerTest.php
-sudo nano blinker
-php blinkerTest.php
-cd /usr
-cd /bin
-cd /php
-ls
-cd ..
-ls
-cd /bin
-l
-ls
-cd env
-cd ~
-ls
-cd Desktop/
-ls
-cd php-blinker/
-ls
-chmod 0755 /path/to/script.php
-chmod 0755 myBlinker
-./myBlinker
-sudo ./myBlinker
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17
-sudo ./myBlinker 17 27
-sudo ./myBlinker 17 27 200000
-sudo ./myBlinker 17 27 200000
-sudo ./myBlinker 17 27
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 4
-sudo ./myBlinker 17 27 1
-sudo ./myBlinker 17 27 5
-php blinkerTest.php
-php blinkerTest.php
-php blinkerTest.php
-php blinkerTest.php
-ls
-cd ..
-ls
-cd ..
 ls
 cd Controller/
 ls
-cd php-blinker/
+cd ..
+git pull origin master
+git status
+git log
+git status
+go head
+git checkout head
+git log
+git checkout 08b408769bf273947eb3be926a62ff5ef79e7308
+git status
+git checkout master
+git status
+git log
+git status
+git checkout 08b408769bf273947eb3be926a62ff5ef79e7308
+git checkout master
+git reset --hard 08b408769bf273947eb3be926a62ff5ef79e7308
+git status
+git push origin master
+git status
 ls
-sudo ./myBlinker 17 2
+cd Controller/
 ls
+nano database_test.php 
+nano Base.php 
+cd ..
+nano db.php 
+nano db.php 
+nano db.php 
+cd Controller/
+ls
+cd ..
+nano db.php 
+nano db.php 
+nano db.php 
+cd Controller/
+ls
+nano database_test.php 
+nano Base.php 
+nano Base.php 
+php -l Base.php 
+php -l database_test.php 
+ls
+nano database_test.php 
+nano Base.php 
+nano Base.php 
+nano database_test.php 
+nano database_test.php 
+cd ..
+ls
+nano db.php 
+nano db.php 
+cd Controller/
+nano Base.php 
+nano Base.php 
+git add .
+git commit -m "database connection issues"
+git pull origin master
+git push origin master
+git pull origin master
+exit
+git pull origin master
+gs
+git pull origin master
+ls
+cd Javascript/ls
+cd Javascript/
+ls
+nano new_sequence.js 
+nano new_sequence.js 
+cd ..
+git add .
+git commit -m "changed ajax"
+git status
+git pull origin master
+git pull origin master
+nano Javascript/new_sequence.js 
+ls
+cd Sequences/
+ls
+rm aaaaaaaa.json 
+cd ..
+ls
+ls Sequences/
+nano Javascript/new_sequence.js 
+cd Controller/
+ls
+nano save_sequence_to_file.php 
+nano Javascript/new_sequence.js 
+cd ..
+ls
+nano Javascript/new_sequence.js 
+nano Controller/save_sequence_to_file.php
+cd Sequences/
+ls
+nano new
+ls
+rm new.json 
+ls
+cd ..
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+nano Controller/save_sequence_to_file.php 
+sudo visudo
+nano Controller/save_sequence_to_file.php 
+ls Sequences/
+nano Controller/save_sequence_to_file.php 
+ls
+chmod -R www-data
+cd .
+cd ..
+ls
+cd ..
+cd ..
 cd ..
 s
 ls
-php blinkerTest.php 
-php blinkerTest.php 
+cd home/wcp18/WCP18/
 ls
-cd ..
-ls
-php blinkerTest.php 
-ls
-cd Controller/
-ls
-php blinkerTest.php 
-sudo visudo
-cd ..
-ls
+sudo usermod -a -G www-data wcp18
+sudo chgrp -R www-data /home/wcp18/WCP18
+sudo chmod -R g+w /home/wcp18/WCP18
+git log
+git status
+git checkout .
+git status
 git add .
-git commit -m 'refresh makes blink"
-'
+git commit -m "db works on pi"
 git pull origin master
 git push origin master
-git push origin master
+nano Javascript/new_sequence.js 
+nano Controller/save_sequence_to_file.php 
+git pull origin master
+ls
+cd Sequences/
+ls
+rm aaaaaaaa.json 
+rm A_Name.json 
+rm bababa.json 
+rm cccccc.json 
+rm dadadad.json 
+ls
+ls
+sudo rm dadadad.json 
+ls
+rm will_it_work.json 
+ls
+rm test.json 
+rm new.json 
+ls
+exit
+nano Javascript/home.js 
+nano Javascript/home.js 
+nano Javascript/home.js 
+nano Javascript/home.js 
+nano Javascript/home.js 
+ls
+mkdir Queue
+ls
+gs
+git status
 git add .
-git commit -m "
-submit button blinks leds"
+gs
+git status
+git rm Sequences/A_Name.json
+git rm Sequences/aaaaaaa.json
+git rm Sequences/aaaaaaaa.json
+gs
+git status
+git commit -m "unselect sequence on add to queue"
+git pull origin master
 git push origin master
-git add .
-git commit -m "working on frame length"
-git push origin master
+exit
+cd Javascript/
+ls
+ls
+cd Sequences/
+ls
+rm D\!ckbutt.json 
+rm Dancing_Monkey.json 
+rm fast_and_long.json 
+exit
 shutdown -h now
 sudo shutdown -h now
-sudo apt-get install phpmyadmin
-nano /etc/apache2/apache2.conf
-sudo nano /etc/apache2/apache2.conf
-/etc/init.d/apache2 restart
-sudo nano /etc/apache2/apache2.conf
-ls /etc/phpmyadmin
-sudo nano /etc/apache2/apache2.conf
-sudo /etc/init.d/apache2 restart
-startx
-gpio mode 2 out
-gpio write 2 1
-gpio write 2 0
-php blinkerTest.php
-ls
-cd Desktop/
-ls
-cd php-blinker/
-ls
-php blinkerTest.php
-cd
-ls
-ccd ..
+exit
+sudo shutdown -h now
+sudo shutdown -h now
+suo raspi-config
+sudo raspi-config
+wget http://sourceforge.net/code-snapshots/svn/m/mj/mjpg-streamer/code/mjpg-streamer-code-182.zip
+wget http://sourceforge.net/code-snapshots/svn/m/mj/mjpg-streamer/code/mjpg-streamer-code-182.zip
 ls
 cd ..
 ls
 cd WCP18/
-ls
-cd external_libraries/php-blinker/
-ls
-sudo nano blinkerTest.php 
-cd ..
+mv mjpg-streamer-code-182.zip ..
 ls
 cd ..
 ls
-git pull origin master
-gs
-git pull origin master
-git pull origin master
-cd /etc/network
+unzip mjpg-streamer-code-182.zip 
+cd mjpg-streamer-code-182/mjpg-streamer
 ls
-sudo nano interfaces
-sudo nano interfaces
+make mjpg_streamer input_file.so output_http.so
+sudo cp mjpg_streamer /usr/local/bin
+sudo cp output_http.so input_file.so /usr/local/lib/
+ls
+sudo cp -R www /usr/local/www
 cd ..
-ls
-cd wpa_supplicant/
-ls
-sudo nano wpa_supplicant
-sudo nano wpa_supplicant.conf
-ls
-sudo nano wpa_supplicant.conf
 cd ..
-sudo reboot
-startx
-sudo nano /etc/network/interfaces
-sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-sudo nano /etc/network/interfaces
-sudo reboot
-sudo nano /etc/network/interfaces
-sudo nano /etc/network/interfaces
-startx
-sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-sudo ifup wlan0
-lsusb
-sudo ifup wlan9
-sudo ifup wlan0
-sudo nano /etc/network/interfaces
-sudo ifup wlan0
-ifconfig
-sudo reboot
-startx
-sudo shutdown -h now
-ls
-cd ..
-ls
-mkdir email_ip
-ls
-cd email_ip/
-nano startup_mailer.py
-sudo chmod +x startup_mailer.py
-sudo nano /boot/boot.rc
-cd /boot/
-ls
-sudo nano .bashrc
 cd ~
 ls
 cd ..
 ls
-cd email_ip/
-nano launcher.sh
-nano startup_mailer.py 
-py startup_mailer.py 
-python startup_mailer.py 
-sudo nano /etc/rc.local 
-sudo nano /etc/rc.local 
-sudo reboot
-shutdown
+ mkdir /tmp/stream
+raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+exit
+raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+ls
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd ..
+cd ~
+ls
+ls
+cd Templates/
+ls
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
+nano home.mustache 
 sudo shutdown -h now
+sudo apt-get install libjpeg8-dev imagemagick libv4l-dev
+sudo ln -s /usr/include/linux/videodev2.h /usr/include/linux/videodev.h
+wget http://sourceforge.net/code-snapshots/svn/m/mj/mjpg-streamer/code/mjpg-streamer-code-182.zip
 ls
 cd ..
 ls
-sudo su
-exit
-tzselect
-exit
+cd mjpg-streamer-code-182/
+ls
+cd /usr/
+ls
+cd local/
+ls
+cd lib/
+ls
+cd ..
+cd ..
+cd ~
+ls
+cd ..
+ls
+cd mjpg-streamer-code-182/
+ls
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+startx
+cd /usr/
+ls
+cd local/
+ls
+cd www/
+ls
+nano javascript_simple.html 
+ls
+cd ..
+ls
+mkdir /tmp/stream
+raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
 exit
 ls
+cd ..
+cd /usr/local/www/
+ls
+nano javascript_simple.html 
+cat javascript_simple.html 
+ls
+nano fountain_stream.html
+nano fountain_stream.html
+sudo nano fountain_stream.html
+ls
+cd ~
+ls
+nano Templates/home.mustache
+nano Javascript/home.js 
+nano Javascript/home.js 
+nano Javascript/home.js 
+ls
+nano Templates/home.mustache
+cd /usr/local/www/
+sudo nano fountain_stream.html 
+exit
+ls
+cd ..
+ls
+cd mjpg-streamer-code-182/
+ls
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd ~
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd /etc/
+ls
+sudo nano rc.local
+sudo nano rc.local
+sudo nano rc.local
+ls
+sudo reboot -h now
+sudo reboot
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd ..
+ls
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+sudo LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd /usr/local/
+ls
+cd www/
+ls
+cd ~
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+cd ..
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd mjpg-streamer-code-182/
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ls
+cd /etc/
+ls
+sudo nano rc.local
+cd ~
+mkdir /tmp/stream
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
+ raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+xit
+eix
+texit
+sudo reboot
+mkdir /tmp/stream
+raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 &
+ls
+git pull origin master
+git status
+git checkout .
+git status
+git add .
+git commit -m "new sequences"
+git pull origin master
+git status
+git push origin master
+sudo reboot
+cd /etc
+ls
+sudo nano rc.local 
+php /home/wcp18/WCP18/Controller/queue_execution.php 
+cd /home/wcp18/WCP18/Controller/
+ls
+php queue_execution.php 
+ls
+cd ..
+ls
+cd Queue/
+ls
+rm Nozzle2.json 
+rm Nozzle1.json 
+ls
+cd ../Controller/
+ls
+php queue_execution.php 
+nano queue_execution.php 
+git pull origin master
+php queue_execution.php 
+cd ..
+ls
+cd Sequences/
+ls
+cp Nozzle1.json ../Queue/Nozzle1.json
+ls
+cd ../Queue/
+ls
+cd ../Controller/
+ls
+php queue_execution.php 
+git pull origin master
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+ls
+sudo nano /etc/rc.local 
+ls
+cd Controller/
+ls
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+php queue_execution.php 
+ls ../Queue/
+nano queue_execution.php 
+php queue_execution.php 
+nano queue_execution.php 
+git add .
+git commit -m "working on queue"
+git push origin master
+php queue_execution.php 
+cd ../Queue/
+sudo chmod -R wcp18 /home/wcp18/WCP18/Queue/
+sudo chmod 755 /home/wcp18/WCP18/Queue/
+cd ../Controller/
+cd ../Queue/
+ls
+ls -l
+sudo ls -l
+chmod 755
+chmod 755 /home/wcp18/WCP18/Queue/
+sudo ls -l
+ls -l ../Sequences/
+groups
+groups www-data
+groups wcp18
+chgrp www-data /home/wcp18/WCP18/Queue/
+chmod g+rwxs /home/wcp18/WCP18/Queue/
+cd ../Controller/
+ls
+php queue_execution.php 
+cd Controller/
+ls
+php queue_execution.php 
+php queue_execution.php 
+php queue_execution.php 
+sudo nano /etc/rc.local 
+sudo reboot
+cd Controller/
+ls
+php queue_execution.php 
+sudo visudo
+chmod 755 /home/wcp18/WCP18/Controller/queue_execution.php 
+./queue_execution.php
+ls
+cd ..
+ls
+cd external_libraries/
+ls
+cd php-blinker/
+ls
+cd ../../Controller/
+ls
+sudo visudo
+sudo nano /etc/rc.local
+sudo nano /etc/rc.local
+sudo nano /etc/rc.local
+sudo reboot
+cd Controller/
+ls
+php queue_execution.php 
+sudo nano /etc/rc.local 
+sudo reboot
+exit

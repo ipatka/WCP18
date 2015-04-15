@@ -3,6 +3,7 @@ class Controller_Base {
 
     function __construct() {
         $this->templates = $this->MustacheLoader();
+
     }
 
     private function MustacheLoader () {
@@ -13,6 +14,14 @@ class Controller_Base {
  	    ));
         return $templates;
     }
+
+    //  functions needed:
+    //  connectToDatabaes()
+    //  
+    //  getQueryResults($query)
+    //  $query is a sql command string
+    //  
+
 
 
 

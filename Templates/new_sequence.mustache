@@ -6,9 +6,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../CSS/style.css">
   <link rel="stylesheet" type="text/css" href="../CSS/new_sequence.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript" src="../Javascript/new_sequence.js"></script>
+  <link rel="stylesheet" type="text/css" href="../CSS/sequence_preview.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../Javascript/new_sequence.js"></script>
+	<script type="text/javascript" src="../Javascript/sequence_preview.js"></script>
 	<script type="text/javascript" src="../Javascript/blinker.js"></script>
+  <script type="text/javascript" src="../external_libraries/sweetalert-master/lib/sweet-alert.js"></script>
+     <link rel="stylesheet" type="text/css" href="../external_libraries/sweetalert-master/lib/sweet-alert.css">
 
 </head>
 
@@ -18,6 +24,8 @@
 		Dancing Fountain Prototype
 	</div>
 
+
+	<div class="content_sequence_wrapper">
 		<div id="content_sequence">
 
 			<table id="sequence_input">
@@ -50,21 +58,15 @@
 
     					<td class="row_label">
 							<select class="frame_length">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="0">X</option>
+								{{#frame_length_options}}
+								<option value="{{option}}">{{option}}</option>
+								{{/frame_length_options}}
+
 							</select>
     					</td>
 
     				</tr>
+    				
 				{{/nozzle_rows}}
 
 			</table>
@@ -72,22 +74,76 @@
 
 
 		</div>
-
+		
+		<hr class="gray_seperator">
+		
 		<div id="input_buttons">
-			<a class="button body" href="/Home">Back</a>
 
-			<div class="button body" id="submit">Submit</div>
+			<div class="button_row">
+				<a class="button_icon" href="/Home">
+					<img src="../Images/back.svg" class="icon_big">
+					<div class="icon_text">Back</div>
+				</a>	
+				<div class="button_icon" id="add_more_rows">
+					<img src="../Images/plus.svg" class="icon_big">
+					<div class="icon_text">Add More Rows</div>
+				</div>	
 
-			<div class="button body" id="add_more_rows">Add More Rows</div>
+				<div class="button_icon" id="preview">
+					<img src="../Images/info.svg" class="">
+					<div class="icon_text">Preview</div>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="submit_section">
+				<input type="text" id="sequence_name" placeholder="Name Your Sequence!" class="sequence_name_input">
+				<div class="button_icon" id="submit">
+					<img src="../Images/upload.svg" class="">
+					<div class="icon_text">Submit</div>
+				</div>
+			</div>
+
 		</div>
 
+	</div>
 
+	<div class="preview_content_new" style="display:none">
+		<div class="top_left">Frame <span id="frame_counter"></span></div>
+		<div class="stream_preview" id="valve_1">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_2">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_3">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_4">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_5">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_6">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_7">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_8">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+	</div>
 
 
 	<div id="footer">
-		<div id="school_logo">
+		<a id="school_logo" href="/Home">
 			<img id="BU_logo" class="image" src="../Images/last_hackbu.png"/>
-		</div>
+		</a>
 
 		<div id="team_info" class="sub_header">
 			WCP18<br>Isaac Patka<br>

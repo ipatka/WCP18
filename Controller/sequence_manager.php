@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -21,52 +20,99 @@ class Controller_Sequence_Manager extends Controller_Base {
 
     public function route() {
         
-	    $interpret = array(4 , 17 , 27 , 22 , 18 , 23 , 24 , 25);
-        $sequence_array = $_POST["sequence_post"];
-        $frame = 1;
-        foreach ($sequence_array as $key => $value) {
-            $entry = 1;
-            $pin_counter = 0;
-            echo json_encode("frame");
-            echo json_encode($frame);
-            foreach ($value as $sub_array => $value_b) {
-                if ($entry < 9) {
-                    if ($value_b == 1) {
-                        $pins[$pin_counter] = $interpret[$entry-1];
-                        $pin_counter++;
-                    }
-                    echo json_encode("nozzle"), json_encode($entry);
-                    echo json_encode("state"), json_encode($value_b);
-
-                }
-                else {
-                    echo json_encode("frame_length"), json_encode((int)$value_b);
-                    $frame_length = $value_b;
-		
-                }
-
-
-                $entry++;
-            }
-
-            // $pins[0] = 17;
-            // $pins[1] = 27;
-		  exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins) . '" "' . addslashes($frame_length) . '"');
-            unset($pins);
-            echo "\n";
-            $frame++;
+        if ($_POST['execute_from_home']) {
+            $sequence_name = $_POST['execute_from_home'].'.json';
+            $file = "../Sequences/".$sequence_name;
+            $sequence_array = json_decode(file_get_contents($file));
+            echo json_encode($sequence_array);
         }
+
+        else if ($_POST['add_to_queue']) {
+            $queue_sequence_name = $_POST['add_to_queue'];
+            $myFile = "../Queue/".$queue_sequence_name.".json";
+            $fh = fopen($myFile, 'w') or die("can't open file");
+            $loop = $_POST["loop"];
+            fwrite($fh, $loop);
+            fclose($fh);
+            echo json_encode('Added '.$loop.' to queue');
+        }
+
+        else if ($_POST['skip']) {
+
+            $sequence_to_cancel = $_POST['sequence'];
+
+            $dir = '../Queue/';
+            $files = array_slice(scandir($dir), 2);
+            $extensions = array("json");
+
+            foreach ($files as &$filename) {
+                $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
+                if (in_array($ext, $extensions)) {
+                    echo json_encode($sequence_to_cancel);
+                    if ($filename == $sequence_to_cancel.'.json') {
+                        echo json_encode('deleting '.$filename);
+                        echo json_encode(unlink($dir.$filename));
+                        return;
+                    }
+
+                } 
+            
+            };
+        }
+
+        else if ($_POST['clear_queue']) {
+            $dir = '../Queue/';
+            $files = array_slice(scandir($dir), 2);
+            $extensions = array("json");
+
+            foreach ($files as &$filename) {
+                $ext = pathinfo($dir.$filename, PATHINFO_EXTENSION);
+                if (in_array($ext, $extensions)) {
+                    echo json_encode('deleting '.$filename);
+                    echo json_encode(unlink($dir.$filename));
+                } 
+            
+            };
+        }
+
+
+        else if ($_POST['sequence_post']) {
+            $sequence_array = $_POST["sequence_post"];
+        }
+
+        else if ($_POST['get_sequence_to_preview']) {
+            $file_name = str_replace(' ', '_', $_POST['get_sequence_to_preview']);
+            $sequence_array_handle = $file_name.'.json';
+            $file = "../Sequences/".$sequence_array_handle;
+            $sequence_preview = json_decode(file_get_contents($file));
+            $sequence_preview_processed = preg_replace('/(\\")|(\[)|(\])/', "", $sequence_preview);
+            echo json_encode($sequence_preview);
+        }
+
+        else if ($_POST['get_length_of_sequence']) {
+            $file_name = str_replace(' ', '_', $_POST['get_length_of_sequence']);
+            $sequence_array_handle = $file_name.'.json';
+            $file = "../Sequences/".$sequence_array_handle;
+            $sequence_preview = json_decode(file_get_contents($file));
+            $sequence_preview_processed = preg_replace('/(\\")|(\[)|(\])/', "", $sequence_preview);
+            echo json_encode(count($sequence_preview)); 
+        }
+
+
+
         
         
 
     }
 
-    public function interpret() {
+    private function interpret() {
 
         exec('sudo ./../external_libraries/php-blinker/myBlinker 17 27 3');
 
 
     }
+
+    
 }
 
 $sequences = new Controller_Sequence_Manager();

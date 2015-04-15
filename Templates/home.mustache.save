@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+  <title>WCP18 Dancing Fountain</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/home.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/new_sequence.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/sequence_preview.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../Javascript/home.js"></script>
+	<script type="text/javascript" src="../Javascript/new_sequence.js"></script>
+
+  <script type="text/javascript" src="../external_libraries/sweetalert-master/lib/sweet-alert.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="../external_libraries/sweetalert-master/lib/sweet-alert.css">
+
+</head>
+
+<body>
+
+	<div id="header" class="header_text">
+		Dancing Fountain Prototype
+	</div>
+
+	<div id="content_welcome">
+		<div id="sequence_select">
+
+			<div class="sub_header" id="sequence_select_text">Select a sequence from below or create your own!
+			</div>
+
+			<div id="sequence_box">
+				{{#sequence_option}}
+					<div id="{{sequence_id}}" class="sequence">{{sequence_name}}</div>
+				{{/sequence_option}}
+
+			</div>
+
+			<div id="sequence_buttons">
+				
+				<div class="button body" id="preview_home">Preview</div>
+				<div class ="button body" id="add_to_queue">Add to queue</div>
+				<br><br>
+				<a class ="button body" href="/New_Sequence">New Sequence</a>
+
+
+
+
+			</div>
+
+
+		</div>
+
+		<div id="queue">
+
+			<div class="button" id="live_feed">Live Feed</div>
+
+			<div class="sub_header" id="queue_text">
+				Queue
+			</div>
+
+			<div id="queue_box">
+				<div class="queue_inner_text body">Sequence
+				</div>
+				<div class="queue_inner_text body">Time remaining
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<div class="preview_content" style="display:none">
+		<div class="stream_preview" id="valve_1">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_2">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_3">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_4">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_5">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_6">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_7">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+		<div class="stream_preview" id="valve_8">
+			<div class="preview_overlay" style="display:none"></div>
+		</div>
+	</div>
+
+
+	
+
+	<div id="footer">
+		<div id="school_logo">
+			<img id="BU_logo" class="image" src="../Images/last_hackbu.png"/>
+		</div>
+
+		<div id="team_info" class="sub_header">
+			WCP18<br>Isaac Patka<br>
+			Priscilla Li<br>Vivian Mo<br>
+			Mehdi Lamkies
+		</div>
+
+	</div>
+
+</body>
+
+</html>

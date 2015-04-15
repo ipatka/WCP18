@@ -1,0 +1,27 @@
+#content_setup{
+
+	background-color: rgba(226,240,214,0.7);
+
+	text-align: center;
+	margin: auto;
+	border-radius: 4px;
+
+	padding-top: 20px;
+
+	width: 700px;
+	height: 550px;
+	position: relative;
+
+
+}
+
+
+#config_text {
+	color: white;
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+.button_row{
+	margin: 20px 0;
+}
