@@ -5,7 +5,7 @@ $(document).ready(function(){
 		console.log(window.location.hostname);
 		//console.log(window.location.host);
 		var ip = window.location.hostname;
-		$('#live_feed').attr('href','http://'+ip+':8080/fountain_stream.html');
+		//$('#live_feed').attr('href','http://'+ip+':8080/fountain_stream.html');
 
 		$('.queue_sequence').first().addClass('selected');
 		$('.queue_sequence').first().children('.inline_icon').show();
