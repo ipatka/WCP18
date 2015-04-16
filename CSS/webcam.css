@@ -1,0 +1,56 @@
+/*
+Background of the livefeed page is the same color as the Homepage
+*/
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+body{
+	background-color: #10222B; 
+	font-family: Futura, sans-serif;
+	font-weight: 100;
+}
+
+/*
+Header on top of the live feed
+*/
+#header{
+	font-size: 48px;
+	text-align: center;
+	margin: 20px auto;
+	cursor: default;
+
+}
+
+.header_text{
+	color: white;
+}
+
+/*
+Livefeed formatting:
+	-Center webcam view
+	-Shrink webcam view to a certain pixel size
+*/
+#livefeed_background{
+	background-color: #A1B2A3;
+	border: #A1B2A3 solid 1px;
+	border-radius: 4px;
+	width: 700px;
+	height: 570px;
+	margin: auto;
+	text-align: center;
+}
+
+#livefeed{
+	background-color: #FFFFFF;
+	width: 660px;
+	height: 500px;
+	text-align: center;
+	margin: auto;
+}
+
+/*
+Go back to homepage button
+*/
+#goBack_button{
+	width: 700px;
+	height: 50px;
+	text-align: center;
+}
