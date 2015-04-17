@@ -16,7 +16,7 @@ $pin_close_count = count($pin_close);
 
 $sleep_time = (int)stripslashes($argv[3]);
 
-echo "Setting up pins\n";
+// echo "Setting up pins\n";
 $gpio = new GPIO();
 for ($i = 1; $i <= $pin_open_count; $i++) {
 
@@ -31,7 +31,7 @@ for ($i = 1; $i <= $pin_close_count; $i++) {
 }
 
 
-echo "Turning on pins\n";
+// echo "Turning on pins\n";
 
 for ($i = 1; $i <= $pin_open_count; $i++) {
 
@@ -39,7 +39,7 @@ for ($i = 1; $i <= $pin_open_count; $i++) {
 
 }
 
-echo "Turning off pins\n";
+// echo "Turning off pins\n";
 
 for ($i = 1; $i <= $pin_close_count; $i++) {
 
@@ -47,7 +47,7 @@ for ($i = 1; $i <= $pin_close_count; $i++) {
 
 }
 
-echo "Sleeping!\n";
+//echo "Sleeping!\n";
 usleep($sleep_time * 1000);
 
 // echo "Turning off pin 17\n";
@@ -57,5 +57,5 @@ usleep($sleep_time * 1000);
 
 // }
 
-echo "Unexporting all pins\n";
+//echo "Unexporting all pins\n";
 //$gpio->unexportAll();
