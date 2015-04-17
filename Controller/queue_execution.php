@@ -68,7 +68,7 @@ function execute_sequence($sequence_to_execute) {
                         $pin_open_counter++;
                     } else {
                         $pins_close[$pin_close_counter] = $interpret[$entry-1];
-            $pin_close_counter++;
+                        $pin_close_counter++;
                     }
                    echo json_encode("nozzle"), json_encode($entry);
                    echo json_encode("state"), json_encode($value_b);
@@ -98,9 +98,9 @@ function execute_sequence($sequence_to_execute) {
         // Close all pins
         $pins_close = $interpret;
         // frame length not important
-        //$frame_length = 2;
+        $frame_length_close = 1;
         // turn off pins
-        exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins_open) . '" "' . serialize($pins_close) . '" "' . addslashes($frame_length) . '"');
+        exec('sudo ./../external_libraries/php-blinker/myBlinker "' . serialize($pins_open) . '" "' . serialize($pins_close) . '" "' . addslashes($frame_length_close) . '"');
     }
 
 
